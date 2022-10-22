@@ -1,0 +1,348 @@
+@import url(/reset.css);
+
+.row{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+ .top{
+        height: 50px;
+        background: #eee;
+        .topImg{
+            max-width: 1200px;
+            margin: auto;
+            line-height: 4em;
+          img.zhp{
+            width: 35px;
+            height: 25px;
+            margin-right: 20px;
+            margin-left: 15px;
+            }
+            img.omen{width: 85px; height: 25px;}  
+        }
+        
+    }
+header{
+    height: 50px;
+    h1 img{width: 35px;}
+   
+    .topMenu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+    }
+    nav{
+        ul.topMain{
+            display: flex;
+            gap: 50px;
+            white-space: nowrap;
+            font-size: 18px;
+            font-weight: 600;
+            a{padding-bottom: 10px;}
+
+            & a:hover{
+                color: #555;
+                text-decoration: underline;}
+            & li:hover ul.navSub{display: block;}
+        }
+        ul.navSub{
+            display: none;
+            position: absolute;
+            padding: 1.5em 2em;
+            z-index: 99;
+            line-height: 2.5em;
+            background-color: #222;
+            color: #eee;
+            font-weight: normal;
+            font-size: 15px;
+            & a:hover{color: #999;}
+        }
+    }
+    .search{
+        align-items: center;
+    }
+    input{
+        width: 300px;
+        height: 42px;
+        border: 1px solid #999;
+    }
+    button{
+        padding: 0 1.5rem;
+        height: 42px;
+        border: 1px solid #333;
+        background: #333;
+        color: #fff;
+        cursor: pointer;
+        &:hover{
+            color: #333;
+            font-weight: 600;
+            text-decoration: underline;
+            background: #fff;
+            border: 1px solid #333;
+        }
+    }
+}
+section#sect1{
+    .swiper{
+        width: 100%;
+        height: 500px;
+        margin: 50px auto;
+        overflow: hidden;
+        .swiper-wrapper{
+            width: 400%;
+            position: relative;
+            display: flex;
+            .swiper-slide{
+                width: 100%;
+                height: 500px;
+                overflow: hidden;
+                div{
+                    padding: 2.5rem 2rem;
+                    width: 450px;
+                    height: 500px;
+                    background: #333;
+                }
+                button{
+                    padding: .5rem 1rem;
+                    background: #fff;
+                    color: #333;
+                    border: none;
+                    font-size: 20px;
+                    margin-top: 2em;
+                    cursor: pointer;
+                    &:hover{
+                        color: #eee;
+                        background: #555;}
+                }
+            }
+            .slide1{
+                height: 500px;
+                background: url(./img/VISID-KR-premium-notebooks-desktop.jpg);
+                background-size: cover;
+                h2{
+                    color: #eee;
+                }
+                p{
+                    color: #eee;
+                    padding: 1em 0;
+                    line-height: 1.8em;
+                }
+            }
+            .slide2{
+                height: 500px;
+                background: url(./img/VISID-laserjet-pro-4000-series-desktop_2x.jpg);
+                background-size: cover;
+                h2{
+                    color: #eee;
+                }
+                p{
+                    color: #eee;
+                    padding: 1em 0;
+                    line-height: 1.8em;
+                }
+            }
+            .slide3{
+                height: 500px;
+                background: url(./img/VISID-KR-omen-gaming-desktop_2x.jpg);
+                background-size: cover;
+                background-position: 0,20%;
+                h2{
+                    color: #eee;
+                }
+                p{
+                    color: #eee;
+                    padding: 1em 0;
+                    line-height: 1.8em;
+                }
+            }
+            .slide4{
+                height: 500px;
+                background: url(./img/VISID-ultron-elite-dragonfly-convertible-desktop_2x.jpg);
+                background-size: cover;
+                h2{
+                    color: #eee;
+                }
+                p{
+                    color: #eee;
+                    padding: 1em 0;
+                    line-height: 1.8em;
+                }
+            }
+        }
+    }
+}
+section#sect2{
+    margin-bottom: 150px;
+    h2{
+        line-height: 4em;
+        border-bottom: 1px solid #999;
+    }
+    article.art1{margin-top: 30px;}
+    .content{
+        display: flex;
+        figure{
+            background: linear-gradient(#eee 230px,#fff 30px);
+            img{
+                height: 210px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    figcaption{
+        button{
+        height: 30px;
+        padding: 0 2em;
+        background: #333;
+        color: #fff;
+        border: 1px solid #333;
+        margin-top: 1.5em;
+        cursor: pointer;
+            &:hover{
+                color: #333;
+                border: 1px solid #333;
+                text-decoration: underline;
+                background: #fff;
+            }
+        }
+    }
+    
+}
+footer{
+    height: 470px;
+    background: #333;
+    color: #eee;
+    .fot{
+        max-width: 1200px;
+        margin: auto;
+    }
+    ul.menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    ul.menu1{
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 30px;
+        li.main{
+            margin-top: 20px;
+                font-weight: 900;
+                line-height: 4em;
+            }
+        ul.sub{
+        display: block;
+        font-size: 13px;
+        color: #eee;
+        line-height: 2.5em;
+        
+        & a:hover{text-decoration: underline;}
+        a{font-weight: normal;}
+        }
+    }
+    ul.menu2{
+        margin-top: 30px;
+        max-width: 800px;
+        position: relative;
+        font-weight: 900;
+        & a:hover{text-decoration: underline;}
+    }
+    address{
+        width: 400px;
+        font-style: normal;
+        position: absolute;
+        line-height: 5em;
+        font-size: 13px;
+        color: #ddd;
+    }
+}
+
+@media screen and (max-width:567px) {
+    header{
+        .search{display: none;}
+    }
+    .swiper-slide{
+        h2{font-size: 30px;}
+        p{font-size: 18px;
+            width: 350px;}
+    }
+    section#sect2{
+        text-align: center;
+        .content{
+            display: block;
+            figure{
+                margin-bottom: 60px;
+                img{width: 300px;}
+                figcaption{
+                    h3{line-height: 2.5em;}
+                    p{
+                        width: 400px; 
+                        margin: auto;
+                        font-size: 15px;
+                        line-height: 1.7em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:577px) {
+    header{
+        .search{display: none;}
+    }
+    .swiper-slide{
+        h2{font-size: 35px;}
+        p{
+            width: 350px;
+            font-size: 18px;}
+    }
+    section#sect2{
+        text-align: center;
+        article{
+            margin-bottom: 80px;
+        }
+        .content{
+            justify-content: center;
+            gap: 30px;
+            figure{
+                height: 380px;
+                img{width: 300px;}
+                figcaption{
+                    text-align: left;
+                    h3{font-size: 18px;
+                        line-height: 2.5em;
+                    }
+                    p{font-size: 12px;
+                        line-height: 1.6em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:992px) {
+    header{
+        .search{display: block;}
+    }
+    section#sect2{
+        .content{
+            gap: 100px;
+            figure{
+                max-width: 992px;
+                img{width: 325px;}
+                figcaption{
+                    h3{font-size: 20px;}
+                    p{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1200px) {
+    .swiper-slide{
+        h2{font-size: 40px;}
+        p{
+            width: 390px;
+            font-size: 18px;}
+    }
+}

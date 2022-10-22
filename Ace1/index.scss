@@ -1,0 +1,366 @@
+@import url(/reset.css);
+@import url(./font.css);
+
+$activeTextColor: #0890c0;
+$h2FontFamiily: Metropolis-Light;
+$h3FontFamiily: Metropolis-Medium;
+$h2Fontsize: 50px;
+$h3Fontsize: 30px;
+
+// mixin 띄어쓰기 주의
+@mixin h2Font {
+    font : {
+        size: $h2Fontsize;
+        family: $h2FontFamiily;
+        weight: normal;
+    }
+}
+@mixin h3Font {
+    font : {
+        size: $h3Fontsize;
+        family: $h3FontFamiily;
+        weight: 600;
+    }
+}
+header{
+    white-space: nowrap;
+    width: 100%;
+    height: 150px;
+    .log{
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        gap: 5px;
+        background-color: #fff;
+        z-index: 99;
+        padding-right: 98px;
+        ul{display: flex;
+            gap: 10px;
+            padding-right: 15px;
+            color: #666;
+            font-size: 14px;
+            li:hover a{font-weight: 600;}
+        }
+        button{
+            height: 35px;
+            border: none;
+            border-radius: 50px;
+            color: #fff;
+            padding: 0 1em;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .btn1{background-color: #139CAE;}
+        .btn2{background-color: #9BADB6;}
+        .btn1:hover{opacity: .5;}
+        .btn2:hover{opacity: .5;}
+    }
+    .topMenu{
+        position: fixed;
+        top: 70px;
+        width: 100%;
+        height: 100px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 99;
+        background-color: #fff;
+        .sub{
+            position: absolute;
+            top: 30px;
+            width: 100%;
+            font-size: 14px;
+            line-height: 1.5em;
+            display: none;
+            li{padding: .3em 0;}
+        }
+        .lnb{
+            position: relative;
+            display: flex;
+            gap: 15px;
+            margin-left: 100px;
+            // height: 100px;
+            span{font-weight: 600;
+                padding: 2em 0;
+            }
+            span.over{display: none;}
+            .sub li:hover{color: #0890c0;
+            }
+            &:hover>li{padding: 0 1em;
+                transition: .2s;
+            }
+            & span:hover{color: #0890c0;}
+            // &:hover .sub{display: block;}
+
+        }
+        .rnb{
+            position: relative;
+            display: flex;
+            gap: 15px;
+            margin-right: 100px;
+            // height: 100px;
+            li.main{padding: 2em 0; 
+                font-weight: 600;}
+            .sub {
+                position: absolute;
+                li{font-weight: 500;}
+                & li:hover{color: #0890c0;
+                }
+            }
+            &:hover>li{padding: 0 2em;
+                transition: .2s;}
+            &:hover>li.main2{padding-left: 20px;
+                padding-right: 1px;
+                    transition: .2s;}
+            & li.main:hover>a{color: #0890c0;}
+            
+        }
+    }
+    .fullBg{
+        position: fixed;
+        width: 100%;
+        top: 90px;
+        height: 250px;
+        background-color: #fff;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+        display: none;
+        z-index: 5;
+    }
+}
+
+section{height: 100vh;
+    position: relative;
+}
+h2{@include h2Font();
+    text-align: center;
+}
+h3{@include h3Font();}
+
+#sect2 {
+    ul.menu{
+        position: absolute;
+        top: 50%;
+        left: 10rem;
+        transform: translateY((-50%));
+        li{
+            margin-bottom: 27px;
+            letter-spacing: .1rem;
+            color: #999;
+            cursor: pointer;
+            &.on{font-size: 22px;
+                color: $activeTextColor;
+                font-weight: bold;
+            }
+        }
+    }
+    .slideContainer {
+        width: 459px;
+        height: 800px;
+        margin: 50px auto;
+        overflow: hidden;
+      }
+    .slideWrap{
+    width: 400%;
+    position: relative;
+    display: flex;
+    .slide{
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+        video{
+            position: absolute;
+            width: 459px;
+            height: 800px;
+            top: 20%;
+            object-fit: cover;
+        }
+        &.on{display: block;}
+        }
+    }
+}
+
+.desc{
+    position: absolute;
+    width: 358px;
+    height: 450px;
+    top: 50%;
+    right: 8rem;
+    transform: translateY(-50%);
+    overflow: hidden;
+    .verticalSlide{
+        position: relative;
+        transform: translateY(50px);
+        div{
+        position: relative;
+        width: 100%;
+        height: 400px;
+        display: none;
+        transition: 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+        &.on{display: block;}
+
+        h3{@include h3Font();
+            margin-bottom: 1rem;
+        }
+        p : {family: $h3FontFamiily;}
+        p{line-height: 1.5rem;}
+        }
+    }
+        div.on{ top:0px; opacity:1;}
+    }
+    
+a.prev{
+    position: absolute;
+    left: 3%;
+    top:50%;
+    transform: translateY(-50%);
+    color: #666;
+    z-index: 50;
+    img{
+        width: 30px;
+    }
+}
+a.next{
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    z-index: 50;
+    img{
+        width: 30px;
+    }
+}
+a.prev.stop,a.next.stop{opacity: .2;}
+// -------------------------
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+#sect3{
+        h2{
+        margin-top: 150px;
+        margin-bottom: 43px;}
+    .slideTab{
+        width: 1280px;
+        height: 720px;
+        position: relative;
+        margin: auto;
+        .swiper{position: absolute;}
+
+    }
+    .gategory{
+        text-align: center;
+        margin-bottom: 50px;
+        li{
+        display: inline-block;
+        margin-right: 54px;
+            a{
+                font-size: 22px;
+                &.on{
+                    font-weight: bold;
+                    color: #0890c0;
+                }
+            }
+        }
+    }
+    
+    .desc{
+        position: absolute;
+        color: #fff;
+        left: 100px;
+        top: 100px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .slideTab{
+    width: 1280px;
+    height: 720px;
+    position: relative;
+    margin: auto;
+    }
+    .swiper2,.swiper3{position: absolute;}
+    .swiper {
+    width: 1280px;
+    height: 720px;
+    }
+
+    .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    }
+    .swiper{overflow: visible;}
+
+    .swiper2 .swiper-slide:nth-child(1){
+        background-image: url(./img/tab1_1.jpg);}
+    .swiper2 .swiper-slide:nth-child(2){
+        background-image: url(./img/tab1_2.jpg);}
+    .swiper2 .swiper-slide:nth-child(3){
+        background-image: url(./img/tab1_3.jpg);}
+
+    .swiper3 .swiper-slide:nth-child(1){
+        background-image: url(./img/tab2_1.jpg);}
+    .swiper3 .swiper-slide:nth-child(2){
+        background-image: url(./img/tab2_2.jpg);}
+    .swiper3 .swiper-slide:nth-child(3){
+        background-image: url(./img/tab2_3.jpg);}
+
+
+    .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    
+}
+
+footer{
+    margin-top: 100px;
+    height: 150px;
+    border-top: 1px solid #999;
+    ul{ line-height: 4em;
+        display: flex;
+        gap: 50px;
+        font-size: 16px;
+        margin-left: 100px;
+        li.on{color: #0890c0;
+            font-weight: bold;
+        }
+    }
+    address{
+        margin-left: 100px;
+        font-style: normal;
+        line-height: 1.8em;
+        color: #999;
+    }
+}

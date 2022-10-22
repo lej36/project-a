@@ -1,0 +1,127 @@
+@import url(/reset.css);
+.flex {
+  display: flex;
+}
+
+header {
+  position: fixed;
+  z-index: 99;
+}
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+#sect1 ul.thum {
+  width: 100%;
+  height: 155px;
+  position: absolute;
+  left: 0;
+  bottom: -140px;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  border-top: 1px solid rgba(225, 225, 225, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.35s;
+  cursor: pointer;
+}
+#sect1 ul.thum:hover {
+  bottom: 0;
+}
+#sect1 ul.thum li {
+  position: relative;
+}
+#sect1 ul.thum li::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  left: 0;
+  top: -20px;
+  background: #e2782a;
+  opacity: 0;
+}
+#sect1 ul.thum li.on::after {
+  opacity: 1;
+}
+#sect1 ul.thum img {
+  width: 86px;
+}
+
+#sect2 .inner {
+  width: 1500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#sect2 .inner .accodion {
+  width: 480px;
+  border: 1px solid #e2782a;
+  padding: 53px 55px;
+}
+#sect2 .inner .accodion .title {
+  border-bottom: 1px solid #333;
+}
+#sect2 .inner .accodion .title h2 {
+  font-size: 26px;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+#sect2 .inner .accodion .accodionContents .rank {
+  margin-bottom: 8px;
+}
+#sect2 .inner .accodion .accodionContents .rank .item {
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  padding: 4px;
+}
+#sect2 .inner .accodion .accodionContents .rank .item.on {
+  background: #e2782a;
+}
+#sect2 .inner .accodion .accodionContents .rank .itemList {
+  display: none;
+}
+#sect2 .inner .accodion .accodionContents .rank .itemList li {
+  border-bottom: 1px solid #ddd;
+  padding: 4px 0;
+  display: flex;
+  cursor: pointer;
+}
+#sect2 .inner .accodion .accodionContents .rank .itemList li b {
+  padding: 0 4px;
+}
+#sect2 .inner .accodion .accodionContents .rank .itemList li figure {
+  display: none;
+}
+#sect2 .inner .accodion .accodionContents .rank .itemList li figure img {
+  width: 80px;
+  height: 112px;
+}
+#sect2 .inner .accodion .accodionContents .rank .itemList li .desc {
+  font-size: 13px;
+  width: 225px;
+  color: #aaa;
+}
+#sect2 .inner .accodion .tabContainer {
+  width: 960px;
+  height: 500px;
+}
+#sect2 .inner .accodion .tabContainer .tabMenu {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+#sect2 .inner .accodion .tabContainer .tabContents .tab ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#sect2 .inner .accodion .tabContainer .tabContents .tab ul li img {
+  width: 220px;
+  height: 308px;
+}/*# sourceMappingURL=index.css.map */

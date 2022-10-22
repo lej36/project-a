@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDBZ</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/9bc66888ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="warp">
+        <i class="fa fa-align-right" aria-hidden="true"></i>
+        <div class="menu">
+            <nav class="on">
+                <ul>
+                    <li class="li1"><a href="#art1">WDBZ ABOUT</a></li>
+                    <li class="li2"><a href="#art2">WDBZ AGENCY</a></li>
+                    <li class="li3"><a href="#art3">WDBZ STUDIO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section>
+        <article id="art1">
+            <div class="box box1">
+                <div class="txt">
+                    <h2>Who we are <span style="color: #14e289;">" WE DEM BOYZ "</span></h2>
+                    <p>트렌디한 감각과 그루브로 춤의 고정관념을 깨다</p>
+                </div>
+            </div>
+            <div class="box box2">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="box box3">
+                <video src="./img/video1.mp4" autoplay muted loop></video>
+            </div>
+            <div class="box box4">
+                <video src="./img/video2.mp4" autoplay muted loop></video>
+            </div>
+            <div class="box box5">
+                <img src="./img/wedem.jpg" alt="">
+            </div>
+            <div class="box box6">
+                <div class="txt">
+                    <h2>FOLLOW WEBZ</h2>
+                </div>
+            </div>
+            <div class="box box7">
+                <video src="./img/video3.mp4" controls muted
+                ></video>
+            </div>
+            <div class="box box8">
+                <h2>DANCER PROFILE</h2>
+            </div>
+            <div class="box box9">
+                <h2>YOUTUBE</h2>
+            </div>
+            <div class="box box10">
+                <h2>INSTAGRAM</h2>
+            </div>
+            <div class="box box11">
+                <h2>TIKTOK</h2>
+            </div>
+            <div class="box box12">
+                <div class="txt">
+                    <h2>WE DEM BOYZ</h2><br>
+                    <p>Taehyunvata@gmail.com</p>
+                    <p>@team_wedemboyz @vata_500</p>
+                </div>
+                
+            </div>
+        </article>
+
+        <article id="art2">
+            <div class="box box1">
+                <video src="./img/video5.mp4" autoplay muted loop></video>
+            </div>
+            <div class="box box2">
+                <video src="./img/Album.mp4" autoplay muted loop></video>
+            </div>
+            <div class="box box3">
+                <h2>FIRST</h2>
+            </div>
+            <div class="box box4">
+                <h2>SECOND</h2>
+            </div>
+            <div class="box box5">
+                <h2>THIRD</h2>
+            </div>
+            <div class="box box6">
+                <h2>FOURTH</h2>
+            </div>
+            <div class="box box7">
+                <h2>ALBLM GALLERY</h2>
+            </div>
+            <div class="box box8">
+                <h2>DANCE PROJECT</h2>
+            </div>
+            <div class="box box9">
+                <h2>BEHIND</h2>
+            </div>
+        </article>
+
+        <article id="art3">
+            <div class="box box1">
+                    <h2>WDBZ DANCE CALSS</h2>
+                
+            </div>
+            <div class="box box2">
+                <video src="./img/video7.mp4#t=,32" controls muted loop></video>
+            </div>
+            <div class="box box3">
+                <div class="txt">
+                    <h2>We Dem<br> Boyz<br>Audition</h2>
+                    <p>Taehyunvata@gmail.com</p>
+                </div>
+                
+            </div>
+            <div class="box box4">
+                <div class="txt">
+                    <h2>Class Info</h2>
+                    <p>Every Friday 19:30 to 20:50</p>
+                    <p>Just Jerk Dance Academy (Seogyo-dong 395-135 2nd floor)</p>
+                    <p>a class inquiry
+                        02-336-2040</p>
+                </div>
+                
+            </div>
+            <div class="box box5">
+                <video src="./img/video4.mp4" autoplay muted loop></video>
+            </div>
+            <div class="box box6">
+                <h2>OFFLINE<br> CLASS</h2>
+            </div>
+            <div class="box box7">
+                <h2>ONLINE<br> CLASS</h2>
+            </div>
+        </article>
+        
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        let $icon = $("i");
+        let $menu = $(".menu");
+
+        let $art1 = $('article#art1'),
+            $art2 = $('article#art2'),
+            $art3 = $('article#art3');
+
+        $(function(){
+            $icon.click(function(){
+                $menu.show();
+                $icon.css('color','#fff');
+
+            })
+            $('section').click(function(){
+                $menu.hide();
+                $icon.css('color','#14e289');
+            })
+            $('li.li1,li.li2,li.li3').click(function(){
+                $icon.css('color','#14e289');
+            })
+            $('li.li1').click(function(){
+                $art1.show();
+                $art2.hide();
+                $art3.hide();
+                $menu.hide();
+            })
+            $('li.li2').click(function(){
+                $art2.show();
+                $art1.hide();
+                $art3.hide();
+                $menu.hide();
+            })
+            $('li.li3').click(function(){
+                $art3.show();
+                $art1.hide();
+                $art2.hide();
+                $menu.hide();
+            })
+        })
+    </script>
+</body>
+</html>

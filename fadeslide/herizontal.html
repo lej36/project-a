@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자동 슬라이드 배너</title>
+    <link rel="stylesheet" href="/reset.css">
+    <style>
+        .slideContainer{
+            width: 1200px;
+            margin: auto;
+            height: 300px;
+            overflow: hidden;
+        }
+        .slideWrap{
+            position: relative;
+            display: flex;
+        }
+        .slide{position: relative;}
+        .slide img{
+            width: 100%;
+            vertical-align: top;}
+        h2{position: absolute;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, .5);
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%,-50%);
+        }
+</style>
+</head>
+<body>
+    <div class="slideContanier">
+        <div class="slideWrap">
+            <div class="slide">
+                <img src="/hotel/img/room_bg01.jpg" alt="">
+                <h2>slide1</h2>
+            </div>
+            <div class="slide">
+                <img src="/hotel/img/room_bg02.jpg" alt="">
+                <h2>slide2</h2>
+            </div>
+            <div class="slide">
+                <img src="/hotel/img/room_bg03.jpg" alt="">
+                <h2>slide3</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        setInterval(horizontalslide,3000);
+        function horizontalslide(){
+            $('.slideWrap').animate({'left':'-100%'},function(){
+                $('.slide:first').appendTo('.slideWrap')
+                $('.slideWrap').css({'left':'0%'})
+            })
+            
+        }
+    </script>
+</body>
+</html>

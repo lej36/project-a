@@ -1,0 +1,244 @@
+@import url(/reset.css);
+@font-face {
+  font-family: "Happiness-Sans-Title";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+h2, li a {
+  font-family: "Happiness-Sans-Title";
+}
+
+p, figcaption {
+  font-family: "Pretendard-Regular";
+}
+
+header {
+  height: 120px;
+}
+header .side {
+  width: 30%;
+  height: 100vh;
+  background: url(./img/background01.png);
+  text-align: center;
+  z-index: 99;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+header .side h1 img {
+  width: 200px;
+  padding-top: 30px;
+}
+header .side .bg img {
+  width: 350px;
+  transform: translate(-10%, 50%);
+}
+header nav ul {
+  justify-content: space-between;
+  font-size: 18px;
+  color: rgb(65, 105, 199);
+  font-weight: bold;
+}
+header nav ul a:hover {
+  color: rgb(228, 108, 108);
+}
+
+section#sect1 {
+  height: 400px;
+}
+section#sect1 .swiper {
+  width: 90%;
+  height: 380px;
+  overflow: hidden;
+  position: relative;
+}
+section#sect1 .swiper .swiper-wrapper .swiper-slide {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#sect1 .swiper .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section#sect2 {
+  width: 1040px;
+}
+section#sect2 h2 {
+  width: 100%;
+  margin: auto;
+  color: rgb(65, 105, 199);
+  margin-bottom: 40px;
+}
+section#sect2 figure {
+  border: 1px solid rgb(65, 105, 199);
+  border-radius: 20px;
+  padding: 1.5em 2.5em;
+  background-color: #fff;
+  z-index: 99;
+  cursor: pointer;
+}
+section#sect2 figure figcaption {
+  text-align: center;
+}
+section#sect2 figure .img1-1 img, section#sect2 figure .img1-2 img {
+  border-radius: 50%;
+}
+section#sect2 figure.shinchan:hover .img1-1,
+section#sect2 figure.hirosi:hover .img1-1,
+section#sect2 figure.masae:hover .img1-1,
+section#sect2 figure.hima:hover .img1-1,
+section#sect2 figure.siro:hover .img1-1 {
+  opacity: 0;
+  transition: 0.35s;
+}
+section#sect2 figure.shinchan:hover .img1-2,
+section#sect2 figure.hirosi:hover .img1-2,
+section#sect2 figure.masae:hover .img1-2,
+section#sect2 figure.hima:hover .img1-2,
+section#sect2 figure.siro:hover .img1-2 {
+  opacity: 1;
+  transition: 0.35s;
+}
+section#sect2 figure.shinchan .img1-1,
+section#sect2 figure.hirosi .img1-1,
+section#sect2 figure.masae .img1-1,
+section#sect2 figure.hima .img1-1,
+section#sect2 figure.siro .img1-1 {
+  position: absolute;
+}
+section#sect2 figure.shinchan .img1-2,
+section#sect2 figure.hirosi .img1-2,
+section#sect2 figure.masae .img1-2,
+section#sect2 figure.hima .img1-2,
+section#sect2 figure.siro .img1-2 {
+  opacity: 0;
+}
+section#sect2 button {
+  padding: 0.8em 3em;
+  font-size: 16px;
+  background: rgb(65, 105, 199);
+  color: #eee;
+  border: 1px solid rgb(65, 105, 199);
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+section#sect2 .bg {
+  width: 1063px;
+  transform: translateY(540px);
+  height: 40vh;
+  background: rgb(255, 212, 72);
+}
+
+footer {
+  height: 150px;
+  font-size: 13px;
+  background: rgb(65, 105, 199);
+  color: #eee;
+}
+footer .desc {
+  margin-top: 35px;
+}
+
+@media only screen and (max-width: 629px) {
+  section#sect1 {
+    width: 100%;
+  }
+  section#sect2 h2 {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  header {
+    width: 100%;
+    display: flex;
+  }
+  header .side {
+    position: fixed;
+  }
+  header nav {
+    width: 950px;
+    height: 60px;
+    transform: translate(500px, 50px);
+    border-bottom: 1px solid rgb(168, 188, 234);
+  }
+  header nav ul {
+    display: flex;
+  }
+  section#sect1 {
+    width: 70%;
+    position: relative;
+    top: 50px;
+    float: right;
+    content: "";
+  }
+  section#sect2 {
+    width: 70%;
+    height: 130vh;
+    position: relative;
+    top: 150px;
+    float: right;
+    content: "";
+  }
+  section#sect2 h2 {
+    width: 100px;
+    position: relative;
+    z-index: 99;
+  }
+  section#sect2 .character {
+    display: flex;
+    position: absolute;
+    left: 6%;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: center;
+  }
+  section#sect2 .character figure img {
+    width: 200px;
+    height: 250px;
+  }
+  section#sect2 .character figure .img1-2 img {
+    height: 200px;
+    position: relative;
+    top: 20px;
+  }
+  section#sect2 .character figure figcaption {
+    line-height: 2em;
+    margin-top: 50px;
+  }
+  section#sect2 .btn {
+    width: 20%;
+    margin: auto;
+  }
+  section#sect2 button {
+    position: absolute;
+    top: 820px;
+    z-index: 99;
+  }
+  section#sect2 button:hover {
+    background: #fff;
+    color: rgb(65, 105, 199);
+    font-weight: bold;
+  }
+  footer {
+    width: 70%;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    top: 220%;
+    left: 30%;
+  }
+}/*# sourceMappingURL=index.css.map */

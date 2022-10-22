@@ -1,0 +1,246 @@
+@import url(/reset.css);
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(http://doitallandwell.com/3mar/0303_stx/img/bg_main.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  position: fixed;
+  height: 100%;
+  width: 160px;
+  background: #323232;
+}
+header h1 {
+  height: 70px;
+  background: #fff;
+  text-align: center;
+  line-height: 70px;
+}
+
+section {
+  position: relative;
+  margin-left: 160px;
+  display: flex;
+}
+section article {
+  width: 380px;
+  height: 100vh;
+  background-color: #fff;
+  text-align: center;
+}
+section article .redLine {
+  width: inherit;
+  height: 15px;
+  background-image: url(./img/point_red.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top: 4px solid #ed1c24;
+}
+section article figure img {
+  vertical-align: top;
+}
+section article img.headline {
+  margin-top: 10px;
+  padding: 50px 0;
+}
+section article#business .contaniner li.buscont {
+  margin-bottom: 20px;
+}
+section article#business .contaniner li.buscont .buscont2 {
+  display: flex;
+}
+section article#business .contaniner li.buscont .buscont2 .desc .subhead {
+  margin-bottom: 15px;
+}
+section article#business .contaniner li.buscont .buscont2 .desc .subhead1 {
+  transform: translateX(-32%);
+}
+section article#business .contaniner li.buscont .buscont2 .desc .subhead2 {
+  transform: translateX(-22%);
+}
+section article#business .contaniner li.buscont .buscont2 .desc .subhead3 {
+  transform: translateX(-10%);
+}
+section article#business .contaniner li.buscont a.more {
+  width: 330px;
+  text-align: right;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+section article#business li.desc2 span.descImg {
+  background-position-y: -750px;
+}
+section article#business li.desc3 span.descImg {
+  background-position-y: -900px;
+}
+section article#business li.desc3 .more {
+  margin-bottom: 60px;
+}
+section article#business span.descImg {
+  width: 100px;
+  height: 80px;
+  display: block;
+  margin-left: 25px;
+  background: url(./img/bg_biz.jpg) no-repeat 0 -300px;
+}
+section article#company .content {
+  gap: 50px;
+  justify-content: center;
+}
+section article#company .content:nth-child(2) {
+  background-position-x: -120px;
+}
+section article#company .content h3 {
+  padding-bottom: 10px;
+}
+section article#company .image {
+  width: 100%;
+  height: 100px;
+  background-image: url(./img/bg_company.jpg);
+  background-repeat: no-repeat;
+}
+section article#company li.desc1 h3 {
+  transform: translateX(-32px);
+}
+section article#company li.desc2 .image {
+  background-position-x: -120px;
+}
+section article#company li.desc3 .image {
+  background-position-x: -240px;
+  margin-bottom: 20px;
+}
+section article#company li.desc3 p {
+  transform: translateX(-8px);
+}
+section article#company li.desc4 .image {
+  background-position-x: -360px;
+  margin-bottom: 10px;
+}
+section article#company li.desc4 p {
+  margin-bottom: 70px;
+}
+section article#pr {
+  font-size: 12px;
+}
+section article#pr .contaniner {
+  width: 300px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+section article#pr .contaniner .subline {
+  margin-bottom: 30px;
+}
+section article#pr .contaniner .flex {
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+}
+section article#pr .contaniner .flex img.sub {
+  width: 94px;
+  height: 13px;
+}
+section article#pr .contaniner .txt {
+  cursor: pointer;
+  gap: 15px;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+section article#pr .contaniner .txt figure img {
+  width: 92px;
+}
+section article#pr .contaniner .txt .desc {
+  width: 200px;
+  text-align: left;
+  transform: translateY(-10px);
+}
+section article#pr .contaniner .txt .desc b {
+  line-height: 3em;
+}
+section article#pr .recruitment {
+  border-top: 1px solid #ccc;
+  text-align: left;
+  background: url(./img/bg_recruitment.jpeg) no-repeat bottom right;
+}
+section article#pr .recruitment h3 {
+  margin-top: 25px;
+}
+section article#pr .recruitment img {
+  margin-left: 30px;
+  padding: 10px 0;
+}
+section article#pr .recruitment span img {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+section article#ir .content {
+  border-top: 1px solid #ccc;
+  padding: 40px 0;
+}
+section article#ir .content h3 img {
+  padding-bottom: 30px;
+}
+section article#ir .content .list {
+  font-size: 12px;
+  cursor: pointer;
+}
+section article#ir .content .list .flex {
+  width: 300px;
+  justify-content: space-between;
+  margin: auto;
+  line-height: 1.5rem;
+}
+section article#ir .content .flex {
+  width: 300px;
+  justify-content: space-between;
+  margin: auto;
+}
+section article#ir .content .flex .txt {
+  cursor: pointer;
+}
+section article#ir .content .flex span img {
+  transform: translateX(35px);
+}
+section article#map .redLine {
+  position: relative;
+  top: -4px;
+  z-index: 99;
+}
+section article#map .container {
+  width: 100%;
+  height: 680px;
+  background-image: url(./img/bg_network.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateY(-15px);
+}
+section article#map .container .headline {
+  margin-top: 100px;
+}
+section article#map .container .content {
+  transform: translate(70px, 80px);
+  cursor: pointer;
+}
+
+.btn {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+}
+.btn a {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+}
+.btn.on {
+  background-color: #cb2f33;
+}/*# sourceMappingURL=index.css.map */

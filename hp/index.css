@@ -1,0 +1,372 @@
+@import url(/reset.css);
+.row {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.top {
+  height: 50px;
+  background: #eee;
+}
+.top .topImg {
+  max-width: 1200px;
+  margin: auto;
+  line-height: 4em;
+}
+.top .topImg img.zhp {
+  width: 35px;
+  height: 25px;
+  margin-right: 20px;
+  margin-left: 15px;
+}
+.top .topImg img.omen {
+  width: 85px;
+  height: 25px;
+}
+
+header {
+  height: 50px;
+}
+header h1 img {
+  width: 35px;
+}
+header .topMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+header nav ul.topMain {
+  display: flex;
+  gap: 50px;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 600;
+}
+header nav ul.topMain a {
+  padding-bottom: 10px;
+}
+header nav ul.topMain a:hover {
+  color: #555;
+  text-decoration: underline;
+}
+header nav ul.topMain li:hover ul.navSub {
+  display: block;
+}
+header nav ul.navSub {
+  display: none;
+  position: absolute;
+  padding: 1.5em 2em;
+  z-index: 99;
+  line-height: 2.5em;
+  background-color: #222;
+  color: #eee;
+  font-weight: normal;
+  font-size: 15px;
+}
+header nav ul.navSub a:hover {
+  color: #999;
+}
+header .search {
+  align-items: center;
+}
+header input {
+  width: 300px;
+  height: 42px;
+  border: 1px solid #999;
+}
+header button {
+  padding: 0 1.5rem;
+  height: 42px;
+  border: 1px solid #333;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+header button:hover {
+  color: #333;
+  font-weight: 600;
+  text-decoration: underline;
+  background: #fff;
+  border: 1px solid #333;
+}
+
+section#sect1 .swiper {
+  width: 100%;
+  height: 500px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+section#sect1 .swiper .swiper-wrapper {
+  width: 400%;
+  position: relative;
+  display: flex;
+}
+section#sect1 .swiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+section#sect1 .swiper .swiper-wrapper .swiper-slide div {
+  padding: 2.5rem 2rem;
+  width: 450px;
+  height: 500px;
+  background: #333;
+}
+section#sect1 .swiper .swiper-wrapper .swiper-slide button {
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #333;
+  border: none;
+  font-size: 20px;
+  margin-top: 2em;
+  cursor: pointer;
+}
+section#sect1 .swiper .swiper-wrapper .swiper-slide button:hover {
+  color: #eee;
+  background: #555;
+}
+section#sect1 .swiper .swiper-wrapper .slide1 {
+  height: 500px;
+  background: url(./img/VISID-KR-premium-notebooks-desktop.jpg);
+  background-size: cover;
+}
+section#sect1 .swiper .swiper-wrapper .slide1 h2 {
+  color: #eee;
+}
+section#sect1 .swiper .swiper-wrapper .slide1 p {
+  color: #eee;
+  padding: 1em 0;
+  line-height: 1.8em;
+}
+section#sect1 .swiper .swiper-wrapper .slide2 {
+  height: 500px;
+  background: url(./img/VISID-laserjet-pro-4000-series-desktop_2x.jpg);
+  background-size: cover;
+}
+section#sect1 .swiper .swiper-wrapper .slide2 h2 {
+  color: #eee;
+}
+section#sect1 .swiper .swiper-wrapper .slide2 p {
+  color: #eee;
+  padding: 1em 0;
+  line-height: 1.8em;
+}
+section#sect1 .swiper .swiper-wrapper .slide3 {
+  height: 500px;
+  background: url(./img/VISID-KR-omen-gaming-desktop_2x.jpg);
+  background-size: cover;
+  background-position: 0, 20%;
+}
+section#sect1 .swiper .swiper-wrapper .slide3 h2 {
+  color: #eee;
+}
+section#sect1 .swiper .swiper-wrapper .slide3 p {
+  color: #eee;
+  padding: 1em 0;
+  line-height: 1.8em;
+}
+section#sect1 .swiper .swiper-wrapper .slide4 {
+  height: 500px;
+  background: url(./img/VISID-ultron-elite-dragonfly-convertible-desktop_2x.jpg);
+  background-size: cover;
+}
+section#sect1 .swiper .swiper-wrapper .slide4 h2 {
+  color: #eee;
+}
+section#sect1 .swiper .swiper-wrapper .slide4 p {
+  color: #eee;
+  padding: 1em 0;
+  line-height: 1.8em;
+}
+
+section#sect2 {
+  margin-bottom: 150px;
+}
+section#sect2 h2 {
+  line-height: 4em;
+  border-bottom: 1px solid #999;
+}
+section#sect2 article.art1 {
+  margin-top: 30px;
+}
+section#sect2 .content {
+  display: flex;
+}
+section#sect2 .content figure {
+  background: linear-gradient(#eee 230px, #fff 30px);
+}
+section#sect2 .content figure img {
+  height: 210px;
+  margin-bottom: 20px;
+}
+section#sect2 figcaption button {
+  height: 30px;
+  padding: 0 2em;
+  background: #333;
+  color: #fff;
+  border: 1px solid #333;
+  margin-top: 1.5em;
+  cursor: pointer;
+}
+section#sect2 figcaption button:hover {
+  color: #333;
+  border: 1px solid #333;
+  text-decoration: underline;
+  background: #fff;
+}
+
+footer {
+  height: 470px;
+  background: #333;
+  color: #eee;
+}
+footer .fot {
+  max-width: 1200px;
+  margin: auto;
+}
+footer ul.menu {
+  display: flex;
+  justify-content: space-between;
+}
+footer ul.menu1 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+}
+footer ul.menu1 li.main {
+  margin-top: 20px;
+  font-weight: 900;
+  line-height: 4em;
+}
+footer ul.menu1 ul.sub {
+  display: block;
+  font-size: 13px;
+  color: #eee;
+  line-height: 2.5em;
+}
+footer ul.menu1 ul.sub a:hover {
+  text-decoration: underline;
+}
+footer ul.menu1 ul.sub a {
+  font-weight: normal;
+}
+footer ul.menu2 {
+  margin-top: 30px;
+  max-width: 800px;
+  position: relative;
+  font-weight: 900;
+}
+footer ul.menu2 a:hover {
+  text-decoration: underline;
+}
+footer address {
+  width: 400px;
+  font-style: normal;
+  position: absolute;
+  line-height: 5em;
+  font-size: 13px;
+  color: #ddd;
+}
+
+@media screen and (max-width: 567px) {
+  header .search {
+    display: none;
+  }
+  .swiper-slide h2 {
+    font-size: 30px;
+  }
+  .swiper-slide p {
+    font-size: 18px;
+    width: 350px;
+  }
+  section#sect2 {
+    text-align: center;
+  }
+  section#sect2 .content {
+    display: block;
+  }
+  section#sect2 .content figure {
+    margin-bottom: 60px;
+  }
+  section#sect2 .content figure img {
+    width: 300px;
+  }
+  section#sect2 .content figure figcaption h3 {
+    line-height: 2.5em;
+  }
+  section#sect2 .content figure figcaption p {
+    width: 400px;
+    margin: auto;
+    font-size: 15px;
+    line-height: 1.7em;
+  }
+}
+@media screen and (min-width: 577px) {
+  header .search {
+    display: none;
+  }
+  .swiper-slide h2 {
+    font-size: 35px;
+  }
+  .swiper-slide p {
+    width: 350px;
+    font-size: 18px;
+  }
+  section#sect2 {
+    text-align: center;
+  }
+  section#sect2 article {
+    margin-bottom: 80px;
+  }
+  section#sect2 .content {
+    justify-content: center;
+    gap: 30px;
+  }
+  section#sect2 .content figure {
+    height: 380px;
+  }
+  section#sect2 .content figure img {
+    width: 300px;
+  }
+  section#sect2 .content figure figcaption {
+    text-align: left;
+  }
+  section#sect2 .content figure figcaption h3 {
+    font-size: 18px;
+    line-height: 2.5em;
+  }
+  section#sect2 .content figure figcaption p {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+}
+@media screen and (min-width: 992px) {
+  header .search {
+    display: block;
+  }
+  section#sect2 .content {
+    gap: 100px;
+  }
+  section#sect2 .content figure {
+    max-width: 992px;
+  }
+  section#sect2 .content figure img {
+    width: 325px;
+  }
+  section#sect2 .content figure figcaption h3 {
+    font-size: 20px;
+  }
+  section#sect2 .content figure figcaption p {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .swiper-slide h2 {
+    font-size: 40px;
+  }
+  .swiper-slide p {
+    width: 390px;
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=index.css.map */

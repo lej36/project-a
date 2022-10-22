@@ -1,0 +1,212 @@
+@import url(/reset.css);
+@font-face {
+    font-family: 'Happiness-Sans-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2,li a{font-family: 'Happiness-Sans-Title';}
+p,figcaption{font-family: 'Pretendard-Regular';}
+
+header{
+    height: 120px;
+    .side{
+        width: 30%;
+        height: 100vh;
+        background: url(./img/background01.png);
+        text-align: center;
+        z-index: 99;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        h1 img{
+            width: 200px;
+            padding-top: 30px;
+        }
+        .bg img{
+            width: 350px;
+            transform: translate(-10%,50%);
+        }
+    }
+    nav{
+        ul{
+            justify-content: space-between;
+            font-size: 18px;
+            color: rgb(65, 105, 199);
+            font-weight: bold;
+            & a:hover{color: rgb(228, 108, 108);}
+        }
+    }
+}
+section#sect1{
+    height: 400px;
+    .swiper{
+        width: 90%;
+        height: 380px;
+        overflow: hidden;
+        position: relative;
+        .swiper-wrapper{
+            .swiper-slide{
+                width: 60%;
+                text-align: center;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+section#sect2{
+    width: 1040px;
+    h2{width: 100%; margin: auto;
+        color: rgb(65, 105, 199);
+        margin-bottom: 40px;}
+    figure{
+        border: 1px solid rgb(65, 105, 199);
+        border-radius: 20px;
+        padding: 1.5em 2.5em;
+        background-color: #fff;
+        z-index: 99;
+        cursor: pointer;
+        figcaption{text-align: center;}
+        .img1-1 img,.img1-2 img{border-radius: 50%;}
+    }
+    
+    figure.shinchan,
+    figure.hirosi,
+    figure.masae,
+    figure.hima,
+    figure.siro{
+        &:hover .img1-1{opacity: 0; transition: .35s;}
+        &:hover .img1-2{opacity: 1; transition: .35s;}
+        .img1-1{position: absolute;
+        }
+        .img1-2{opacity: 0;}
+    }
+    button{
+        padding: .8em 3em;
+        font-size: 16px;
+        background: rgb(65, 105, 199);
+        color: #eee;
+        border: 1px solid rgb(65, 105, 199);
+        border-radius: 50px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .bg{
+        width: 1063px;
+        transform: translateY(540px);
+        height: 40vh;
+        background: rgb(255, 212, 72);
+        // background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgb(255, 188, 30) 80%);}
+    }
+}
+footer{
+    height: 150px;
+    font-size: 13px;
+    background: rgb(65, 105, 199);
+    color: #eee;
+    .desc{margin-top: 35px;}
+}
+
+
+@media only screen and (max-width: 629px){
+    section#sect1{
+        width: 100%;
+    }
+    section#sect2{
+        h2{text-align: center;}
+    }
+}
+@media only screen and (min-width: 630px){
+
+}
+@media only screen and (min-width: 1400px){
+    header{
+        width: 100%;
+        display: flex;
+        .side{position: fixed;}
+        nav{
+            width: 950px;
+            height: 60px;
+            transform: translate(500px,50px);
+            border-bottom: 1px solid rgb(168, 188, 234);
+            ul{display: flex;}
+        }
+    }
+    section#sect1{
+        width: 70%;
+        position: relative;
+        top: 50px;
+        float: right;
+        content: '';
+        // transform: translate(50%,50%);
+    }
+    section#sect2{
+        width: 70%;
+        height: 130vh;
+        position: relative;
+        top: 150px;
+        float: right;
+        content: '';
+        h2{width: 100px;
+            position: relative;
+            z-index: 99;
+        }
+        .character{
+            display: flex;
+            position: absolute;
+            left: 6%;
+            width: 90%;
+            flex-wrap: wrap;
+            gap: 40px;
+            text-align: center;
+            figure{
+                img{
+                    width: 200px;
+                    height: 250px;
+                }
+                .img1-2 img{height: 200px; position: relative; top: 20px;}
+                figcaption{line-height: 2em; margin-top: 50px;}
+            }
+        }
+        .btn{width: 20%; margin: auto;}
+        button{
+            position: absolute;
+            top: 820px;
+            z-index: 99;
+            &:hover{background: #fff; 
+                color: rgb(65, 105, 199);
+                font-weight: bold;
+            }
+        }
+    }
+    footer{
+        width: 70%;
+        margin: auto;
+        position: absolute;
+        text-align: center;
+        top: 220%;
+        left: 30%;
+    }
+}

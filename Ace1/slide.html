@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      .slideTab{
+        width: 1280px;
+        height: 720px;
+        position: relative;
+        margin: auto;
+    }
+    .swiper2,.swiper3{position: absolute;}
+      .swiper {
+        width: 1280px;
+        height: 720px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      #sect3 .swiper{overflow: visible;}
+
+        .swiper2 .swiper-slide:nth-child(1){
+            background-image: url(./img/tab1_1.jpg);}
+        .swiper2 .swiper-slide:nth-child(2){
+            background-image: url(./img/tab1_2.jpg);}
+        .swiper2 .swiper-slide:nth-child(3){
+            background-image: url(./img/tab1_3.jpg);}
+
+        .swiper3 .swiper-slide:nth-child(1){
+            background-image: url(./img/tab2_1.jpg);}
+        .swiper3 .swiper-slide:nth-child(2){
+            background-image: url(./img/tab2_2.jpg);}
+        .swiper3 .swiper-slide:nth-child(3){
+            background-image: url(./img/tab2_3.jpg);}
+
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+<!-- 슬라이드 모아 놓는 너비 -->
+  <body>
+    <section id="sect3">
+        <h2>ACE COLLECTION</h2>
+        <ul class="gategory">
+            <li><a href="#slide2" class="on">신제품&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            <li><a href="#slide3">추천제품</a></li>
+        </ul>
+
+        <!-- Swiper -->
+        <div class="slideTab">
+            <div class="swiper swiper2" id="slide2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="swiper swiper3" id="slide3">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper2 = new Swiper(".swiper2", {
+        spaceBetween: 50,
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: false,
+        },
+      });
+      var swiper3 = new Swiper(".swiper3", {
+        spaceBetween: 50,
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: false,
+        },
+      });
+
+      $('.gategory li a').click(function(e){
+        e.preventDefault();
+        $('.gategory li a').removeClass('on')
+        $(this).addClass('on')
+
+        let href=$(this).attr('href')
+        alert(href)
+        $('#sect3 .swiper').css({'opacity':'0','z-index':'90'});
+        $(href).css({'opacity':'1','z-index':'100'})
+        })
+    </script>
+  </body>
+</html>

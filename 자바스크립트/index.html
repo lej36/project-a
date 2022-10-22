@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수,연산자,문</title>
+</head>
+<body>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        // // 변수
+        // document.write("환영합니다")
+        // let box;
+        // box=100;
+        // document.write(box);
+
+        // // 연산자
+        // let t1="학교종이"
+        // let t2=" 땡똉똉 "
+        // result=t1+t2;
+        // document.write(result);
+
+        // // 적정 체중 구하기
+        // let userHeight=180; 
+        // let userweight=74;
+        // let normal=(userHeight-100)*0.9;
+        // document.write(normal);
+
+        // // 적정체중2- 질의응답
+        // let name=prompt("당신의 이름은?","");
+        // let height=prompt("당신의 신장은?","0");
+        // let weigth=prompt("당신의 체중은?","0");
+        // let normal_w=(height-100)*0.9;
+        // // &&:논리연산자- (and) 피연산자 중 값이 하나라도 false가 존재하면 false로 값을 반환
+        // let result=weigth>=normal_w-5&&weigth<=normal_w+5;
+        // result=result?"적정체중입니다":"적정체중이 아닙니다";
+        // document.write(name+"님은"+result);
+
+        // 응용 예제
+        // let price1=1000;
+        // let price2=6000;
+        // let price3=3000;
+        // let pay=price1+price2+price3;
+        // let result=pay>10000 ? pay-10000+"원 초과":"돈 관리 잘 했어요";
+        // document.write(result);
+
+        // if조건문
+        // let walk=prompt("당신이 하루에 걷는 양은 몇 보인가요?");
+        // if(walk>=10000){
+        //     document.write("매우 좋은 습관을 가지고 있습니다","<br>");
+        // }
+        // if(walk<10000){
+        //     document.write("조금 더 분발하세요!","<br>");
+        // }
+        // document.write("===============THE END=============")
+
+        // else문
+        // let num=prompt("당신이 가장 좋아하는 숫자는?","0")
+        // if(num%2==0){
+        //     document.write("짝수");
+        // }
+        // else{
+        //     document.write("홀수");
+        // }
+        // num값을 2로 나눈 나머지 값이 0이면 코드 1실행, 0이 아니면 코드2 실행
+
+        // confirm
+        // let result=confirm("탈퇴하시겠습니까?")
+        // if(result){
+        //     document.write("처리되었습니다")
+        // }
+        // else{
+        //     document.write("취소되었습니다")
+        // }
+
+        // else if문
+        // (2개 이상의 조건문)
+        // let mon=prompt("현재 몇 월입니까?","0");
+        // if(mon>=9&&mon<=11){
+        //     document.write("가을")
+        // }
+        // else if(mon>=6&&mon<=8){
+        //     document.write("여름")
+        // }
+        // else if(mon>=3&&mon<=5){
+        //     document.write("봄")
+        // }
+        // else{
+        //     document.write("겨울")
+        // }
+
+        // 중첩 if문
+        // 조건문 안에 조건문
+        // let id="dladmswl";
+        // let pw="asdf1234";
+        // let userId=prompt("아이디 입력","");
+        // let userPw=prompt("비밀번호 입력","");
+        // if(id==userId){
+        //     if(pw==userPw){
+        //         document.write(userId+"님 반갑습니다");
+        //     }else{
+        //         alert("비밀번호가 일치하지 않습니다");
+        //         location.reload();
+        //     }
+        // }
+        // else{
+        //     alert("아이디가 일치하지 않습니다");
+        //     location.reload();
+        // }
+
+
+    </script>
+</body>
+</html>

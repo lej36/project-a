@@ -1,0 +1,349 @@
+@import url(/reset.css);
+.flex {
+  display: flex;
+  flex-wrap: fixed;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 10%, rgb(255, 255, 255) 100%);
+}
+header .top {
+  max-width: 1400px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .bar {
+  width: 30px;
+  cursor: pointer;
+}
+header .bar .bar1 {
+  padding-bottom: 10px;
+  border-top: 2px solid #333;
+}
+header .bar .bar2 {
+  padding-bottom: 10px;
+  border-top: 2px solid #333;
+}
+header .bar .bar3 {
+  padding-bottom: 10px;
+  border-top: 2px solid #333;
+}
+header h1 img {
+  width: 140px;
+  cursor: pointer;
+}
+header .search {
+  width: 32px;
+  height: 32px;
+  background: url(./img/icons\ \(1\).png) no-repeat left top/320px auto;
+  cursor: pointer;
+  z-index: 99;
+}
+
+#sect1 {
+  height: 100vh;
+  position: relative;
+  top: -100px;
+  z-index: -99;
+}
+#sect1 article.left {
+  width: 50%;
+  height: 100%;
+}
+#sect1 article.left .inner {
+  width: 100%;
+  transform: translate(30%, 200%);
+}
+#sect1 article.left .inner h2 img {
+  width: 320px;
+}
+#sect1 article.left .inner p {
+  font-size: 16px;
+  padding-top: 15px;
+}
+#sect1 article.attchBg {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 760px;
+  height: 100%;
+  background-image: url(./img/visual01.jpg);
+  background-size: 50vw;
+  background-position: 50vw top;
+  background-attachment: fixed;
+}
+
+#sect2 {
+  height: 80vh;
+  width: 100%;
+  background-image: url(./img/parallax_bg.jpg);
+  background-size: cover;
+  transform: translateY(-16.8%);
+}
+#sect2 .desc {
+  text-align: center;
+  color: #fff;
+  transform: translateY(40%);
+}
+#sect2 .desc h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+#sect2 .desc p {
+  line-height: 1.8em;
+  margin-bottom: 40px;
+}
+#sect2 .desc a {
+  padding: 0.8em 4em;
+  border: 1px solid #fff;
+}
+#sect2 .desc a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#sect3 h2 {
+  font-size: 45px;
+  text-align: center;
+  font-weight: normal;
+  line-height: 5em;
+}
+#sect3 .box {
+  position: relative;
+  margin: auto;
+  color: #eee;
+}
+#sect3 .box p {
+  font-weight: 300;
+  line-height: 1.6em;
+}
+#sect3 .box .item1 {
+  background: url(./img/moment01\ \(1\).jpg) no-repeat;
+  background-size: cover;
+}
+#sect3 .box .item2 {
+  background: rgb(92, 111, 102);
+}
+#sect3 .box .item2 .txt a {
+  text-decoration: underline;
+}
+#sect3 .box .item3 {
+  background: url(./img/moment05\ \(1\).jpg);
+  background-size: cover;
+}
+#sect3 .box .item4 {
+  background: url(./img/moment02\ \(1\).jpg);
+  background-size: cover;
+}
+#sect3 .box .item5 {
+  background: url(./img/moment03\ \(1\).jpg);
+  background-size: cover;
+}
+#sect3 .box .item6 {
+  background: url(./img/moment04\ \(1\).jpg) no-repeat;
+  background-size: cover;
+}
+#sect3 .box .item7 {
+  background: rgb(92, 111, 102);
+}
+#sect3 .box > div {
+  position: absolute;
+}
+
+footer {
+  height: 350px;
+  background-color: #eee;
+  margin-top: 200px;
+}
+footer .fot {
+  max-width: 1400px;
+  margin: auto;
+}
+footer .fot h2 {
+  border-bottom: 1px solid #999;
+}
+footer .fot h2 img {
+  width: 170px;
+  padding: 1em 0;
+  margin-top: 50px;
+}
+footer .fot ul {
+  display: flex;
+  gap: 15px;
+}
+footer .fot ul a {
+  font-size: 15px;
+  line-height: 3em;
+  margin-top: 10px;
+}
+footer .fot address {
+  font-style: normal;
+}
+footer .fot address p {
+  font-size: 13px;
+  line-height: 1.5em;
+}
+footer .fot address p.copy {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  #sect1 article {
+    width: 100%;
+    height: 50vh;
+  }
+  #sect1 article.attchBg {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #sect3 .box {
+    margin: 1rem;
+    height: 85vh;
+  }
+  #sect3 .item7 {
+    display: none;
+  }
+  #sect3 .item2 .txt {
+    transform: translate(5%, 100%);
+  }
+  #sect3 .item2 .txt a {
+    transform: translate(300%, 200%);
+  }
+  #sect3 .item2,
+#sect3 .item4 {
+    width: 66.666%;
+    height: 50%;
+  }
+  #sect3 .item1,
+#sect3 .item3,
+#sect3 .item5,
+#sect3 .item6 {
+    width: 33.3333%;
+    height: 25%;
+  }
+  #sect3 .item2,
+#sect3 .item5,
+#sect3 .item1 {
+    left: 0;
+  }
+  #sect3 .item3,
+#sect3 .item6,
+#sect3 .item4 {
+    right: 0;
+  }
+  #sect3 .item2,
+#sect3 .item3 {
+    top: 0;
+  }
+  #sect3 .item1,
+#sect3 .item4 {
+    bottom: 0;
+  }
+  #sect3 .item6 {
+    top: 25%;
+  }
+  #sect3 .item1 {
+    top: 75%;
+  }
+  #sect3 .item5 {
+    top: 50%;
+  }
+}
+@media screen and (min-width: 769px) {
+  #sect1 article {
+    width: 50%;
+    height: 100vh;
+  }
+  #sect3 .box {
+    width: 94vw;
+    height: 45vw;
+  }
+  #sect3 .item1 {
+    left: 0;
+    width: 50%;
+    height: 100%;
+  }
+  #sect3 .item2 {
+    height: 70%;
+    width: 16.6667%;
+  }
+  #sect3 .item2 .txt {
+    font-size: 15px;
+    transform: translate(5%, 70%);
+  }
+  #sect3 .item2 .txt a {
+    transform: translate(-50%, 200%);
+  }
+  #sect3 .item3 {
+    top: 70%;
+    height: 30%;
+    width: 16.6667%;
+  }
+  #sect3 .item4 {
+    width: 16.6666%;
+    height: 27.0833333%;
+    float: left;
+  }
+  #sect3 .item5 {
+    right: 0;
+    width: 16.6666%;
+    height: 27.0833333%;
+  }
+  #sect3 .item6 {
+    top: 27.0833333%;
+    width: 33.33333%;
+    height: 55%;
+  }
+  #sect3 .item7 {
+    bottom: 0;
+    width: 33.33333%;
+    height: 18%;
+  }
+  #sect3 .item7 .txt {
+    font-size: 15px;
+    transform: translate(5%, 30%);
+  }
+  #sect3 .top0 {
+    top: 0;
+  }
+  #sect3 .left1 {
+    left: 50%;
+  }
+  #sect3 .left2 {
+    left: 66.6666%;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #sect3 .box {
+    width: 84vw;
+    height: 49vw;
+  }
+  #sect3 .item2 .txt {
+    font-size: 18px;
+    transform: translate(5%, 200%);
+  }
+  #sect3 .item2 .txt a {
+    transform: translateY(200%);
+  }
+  #sect3 .item7 .txt {
+    font-size: 18px;
+    transform: translate(5%, 60%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .box {
+    width: 80vw;
+    height: 40vw;
+    max-height: 768px;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+  }
+}/*# sourceMappingURL=index.css.map */

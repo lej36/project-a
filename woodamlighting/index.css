@@ -1,0 +1,205 @@
+@import url(/reset.css);
+@import url(./font.css);
+html,
+body {
+  position: relative;
+  height: 100%;
+  font-family: "notoR";
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+header img {
+  padding: 1rem 2rem;
+}
+
+header ul {
+  display: flex;
+  gap: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 2.5rem 0;
+}
+
+.sub {
+  display: block;
+  position: absolute;
+  opacity: 0;
+}
+
+.sub li a {
+  color: #777;
+  line-height: 2.5rem;
+  font-size: 14px;
+}
+
+header ul li:hover .sub {
+  opacity: 1;
+  position: absolute fixed;
+  background: #fff;
+  margin-top: 38px;
+  z-index: 99;
+  padding: 1rem 2rem;
+  transform: translateX(-10px);
+  transition: all 0.2s;
+}
+
+header .sub a:hover {
+  color: #f47a20;
+}
+
+section#sect2 .desc {
+  position: absolute;
+  z-index: 98;
+  top: 30%;
+  left: 19%;
+}
+section#sect2 .desc h2 {
+  color: #eee;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 4rem;
+}
+section#sect2 .desc h2 span {
+  font-weight: 100;
+  font-size: 25px;
+}
+section#sect2 .desc p {
+  color: #ccc;
+  width: 360px;
+  line-height: 1.5rem;
+  margin-top: 10px;
+}
+section#sect2 .swiper {
+  width: 100%;
+  height: 100%;
+}
+section#sect2 .swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+section#sect2 .swiper .swiper-slide .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+section#sect2 nav {
+  position: absolute;
+  left: 86px;
+  top: 72%;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+section#sect2 nav li {
+  width: 100px;
+  height: 100px;
+  color: #eee;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+section#sect2 nav li.on {
+  color: #f47a20;
+}
+section#sect2 nav li:hover {
+  color: #f47a20;
+}
+
+footer {
+  background-color: #ccc;
+  display: flex;
+  height: 250px;
+  align-items: center;
+}
+footer .fot1 {
+  height: 170px;
+  padding: 0 2rem;
+  border-right: 1px solid #999;
+}
+footer .fot1 h3 {
+  font-weight: 300;
+}
+footer .fot1 h3 span {
+  font-weight: normal;
+}
+footer .fot1 h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+footer .fot1 h2 span {
+  font-size: 20px;
+}
+footer .fot1 p {
+  color: #666;
+}
+footer .fot1 img {
+  margin: 0.5rem 0;
+  background-color: #000;
+  border-radius: 50px;
+  cursor: pointer;
+}
+footer .fot2 {
+  padding: 0 3rem;
+}
+footer .fot2 ul {
+  display: flex;
+  margin-bottom: 30px;
+}
+footer .fot2 ul li {
+  padding-right: 20px;
+}
+footer .fot2 ul li span {
+  font-weight: 600;
+}
+footer .fot2 address {
+  padding: 0.5rem 0;
+  display: flex;
+  font-style: normal;
+  gap: 4rem;
+}
+footer .fot2 address .fotDesc {
+  line-height: 1.3rem;
+}
+footer .fotImg {
+  background-image: url(http://www.woodamlighting.com/images/_sample/bg_pf.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 180px;
+  height: 180px;
+  text-align: right;
+  cursor: pointer;
+  position: relative;
+  left: 300px;
+  text-align: center;
+}
+footer .fotImg p, footer .fotImg h3 {
+  transform: translateY(35px);
+}
+footer .fotImg p {
+  width: 110px;
+  color: #999;
+  border: 1px solid #999;
+  margin: auto;
+}
+footer .fotImg h3 {
+  margin-top: 20px;
+  color: #eee;
+}/*# sourceMappingURL=index.css.map */

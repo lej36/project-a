@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+    <style>
+        p img{width: 500px;}
+    </style>
+</head>
+<body id="theBody">
+    <button onclick="changeColor();">색 바꾸기</button>
+
+    <div id="galleryZone">
+        <p><img src="/identitiy/img/identitiy-img-02.png" id="photo" alt=""></p>
+        <p>
+            <button onclick="gallery(0)">이전</button>
+            <button onclick="gallery(1)">다음</button>
+        </p>
+    </div>
+    <script>
+        // 함수 정의문과 익명 함수
+        // let count=0;
+        // myFnc();
+        // function myFnc(){
+        //     count++;
+        //     document.write("hello"+count,"<br>")
+        // }
+        // myFnc();
+        // let theFnc=function(){
+        //     count++;
+        //     document.write("bye"+count,"<br>")
+        // }
+        // theFnc();
+
+        // 예제 바탕색 바꾸기
+        let color=["white","pink","black","yellow"];
+        let i=0
+        function changeColor(){
+            i++;
+            if(i>=color.length){
+                i=0;
+            }
+            let bodyTag=document.getElementById("theBody");
+            bodyTag.style.backgroundColor=color[i];
+        }
+
+        // 매개변수
+        // let id1="dladmswl"
+        // let pw1="1234"
+        // function login(id,pw){
+        //     if(id==id1){
+        //         if(pw==pw1){
+        //             document.write(id+"님 환영합니다");
+        //         }
+        //         else{
+        //             document.write("비밀번호가 틀렸습니다")
+        //         }
+        //     }else{
+        //         document.write("틀린 회원정보 입니다")
+        //     }
+        // }
+
+        // let userId=prompt("아이디를 입력하세요","");
+        // let userPw=prompt("비밀번호를 입력하세요","");
+
+        // login(userId,userPw);
+
+        // 매개변수 없이 함수 전달 값 받아오기
+        // function sum(){
+        //     let sum=arguments[0]+arguments[1]+arguments[2];
+        //     document.write(sum);
+        //     // let sum=0;
+        //     // for(let i=0; i<arguments.length; i++){
+        //     //     sum+=arguments[i];
+        //     // }
+        // }
+        // sum(10,20,30);
+
+        // 반환함수 갤러리 예제
+        let num=1;
+        function gallery(direct){
+            if(direct){
+                if(num==7)return;
+                num++;
+            }else{
+                if(num==1)return;
+                num--;
+            }
+
+            let imgTag=document.getElementById("photo");
+            imgTag.setAttribute("src","/identitiy/img/identitiy-img-0"+num+".png");
+        }
+    </script>
+</body>
+</html>

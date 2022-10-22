@@ -1,0 +1,63 @@
+@charset "UTF-8";
+body{background: #fff; color: #333;}
+*{box-sizing: border-box;}
+a{display: block; text-decoration: none;
+    color: inherit;}
+li{list-style: none;}
+h1,h2.h3,h4,h5,ul{margin: 0; padding: 0;}
+.wrap{width: 1200px; margin: auto; border: 1px solid black;}
+.wrap>*{border: 1px solid yellow;}
+.flex{display: flex;}
+/* ------------------------------------ */
+header{height: 100px; 
+    justify-content: space-between;
+    align-items: center;}
+    /* ------------------------------------ */
+nav ul li.main{position: relative;}
+nav{width: 56%; border: 1px solid black;}
+nav ul li{flex: 1; text-align: center;}
+nav ul li a{padding: 10px;}
+nav ul li.main:hover> a{background: royalblue;
+    color: #fff;
+}
+ul.sub{display: none; position: absolute; width: 100%;
+    background: #eee;
+}
+ul.sub li:hover a{background: skyblue;}
+nav ul li.main:hover ul.sub{display: block;}
+/* ------------------------------------ */
+.slidecontainer{height: 300px; overflow: hidden;}
+/* ------------------------------------ */
+.contents{height: 200px;}
+.contents > div{flex: 1; border: 1px solid black;
+    height: inherit;}
+.banner{background-image: url(./img/banner.png);}
+.gallery{height: 200px; position: absolute;}
+.gallery li img{width: 100%;}
+.gallery ul{height: 160px; gap: 10px; align-items: center;}
+
+.tabmenu li{display: inline-block;}
+.tabmenu li a{background: #eee; padding: 10px;}
+.tabmenu li a.active{background: royalblue; color: #fff;}
+
+.notic{padding: 8px; position: absolute;}
+.notic ul li a{display: flex; justify-content: space-between;
+    align-items: center;
+}
+.notic li p{margin: 4px 0;}
+.notic li:hover{background: #eee;}
+
+.tabcontents{height: 160px; position: relative;}
+.tabcontents> div{display: none;}
+.tabcontents> div.active{display: block;}
+
+.link{background: url(./img/link.png);}
+.banner,.link{position: relative;}
+.banner h2,.link h2{position: absolute; background: rgba(0, 225, 225, .5);
+    padding: 10px; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #fff;
+}
+/* ------------------------------------ */
+footer{height: 100px; align-items: center;}
+footer p.copyright{width: 60%; text-align: center;}
+footer ul.sns{width: 20%; gap: 20px;}
+footer ul.sns li img{width: 50px;}

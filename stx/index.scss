@@ -1,0 +1,227 @@
+@import url(/reset.css);
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(http://doitallandwell.com/3mar/0303_stx/img/bg_main.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.flex{display: flex; flex-wrap: wrap;}
+
+header{
+    // fixed는 body가 부모
+    position: fixed;
+    height: 100%;
+    width: 160px;
+    background: #323232;
+
+    h1{
+        height: 70px;
+        background: #fff;
+        text-align: center;
+        line-height: 70px;
+    }
+}
+
+section{
+    position: relative;
+    margin-left: 160px;
+    display: flex;
+    article{
+        width: 380px;
+        height: 100vh;
+        background-color: #fff;
+        text-align: center;
+        .redLine{
+            width: inherit;
+            height: 15px;
+            background-image: url(./img/point_red.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            border-top: 4px solid #ed1c24;
+        }
+        figure img{
+        vertical-align: top;
+        }
+        img.headline{
+                margin-top: 10px;
+                padding: 50px 0;
+                }
+    }
+    
+    article#business{
+        .contaniner{
+            
+            li.buscont{
+                margin-bottom: 20px;
+                .buscont2{display: flex;
+                    .desc{
+                        .subhead{margin-bottom: 15px;}
+                        .subhead1{transform: translateX(-32%);}
+                        .subhead2{transform: translateX(-22%);}
+                        .subhead3{transform: translateX(-10%);}
+                    }
+                }
+                a.more{
+                    width: 330px;
+                    text-align: right;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid #ccc;
+                }
+            }
+            }
+            li.desc2{
+                span.descImg{
+                    background-position-y: -750px;
+                }
+            }
+            li.desc3{
+                span.descImg{
+                    background-position-y: -900px;
+                }
+                .more{margin-bottom: 60px;}
+            }
+            
+            
+            span.descImg{
+                width: 100px;
+                height: 80px;
+                display: block;
+                margin-left: 25px;
+                background: url(./img/bg_biz.jpg) no-repeat 0 -300px;
+            }
+        }
+    article#company{
+        .content{gap: 50px; justify-content: center;
+            &:nth-child(2){background-position-x: -120px;}
+            h3{padding-bottom: 10px;}
+        }
+        .image{
+            width: 100%;
+            height: 100px;
+            background-image: url(./img/bg_company.jpg);
+            background-repeat: no-repeat;
+            }
+        li.desc1{
+            h3{transform: translateX(-32px);}
+        }
+        li.desc2 .image{background-position-x: -120px;}
+        li.desc3 {
+            .image{
+            background-position-x: -240px;
+            margin-bottom: 20px;
+            }
+            p{transform: translateX(-8px);}
+        }
+       
+        li.desc4{
+            .image{
+                background-position-x: -360px;
+                margin-bottom: 10px;
+                }
+            p{margin-bottom: 70px;}
+            }
+        
+        }
+    article#pr{
+        font-size: 12px;
+        .contaniner{
+            width: 300px; 
+            margin: auto;
+            padding-bottom: 50px;
+            .subline{margin-bottom: 30px;}
+            .flex{
+                cursor: pointer;
+                align-items: center;
+                justify-content: space-between;
+                img.sub{width: 94px; height: 13px;}
+                }
+            .txt{
+                cursor: pointer;
+                gap: 15px;
+                flex-wrap: nowrap;
+                margin-bottom: 20px;
+                figure img{width: 92px;}
+                .desc{
+                    width: 200px;
+                    text-align: left;
+                    transform: translateY(-10px);
+                    b{line-height: 3em;}
+                }
+            }
+
+        }
+        .recruitment{
+            border-top: 1px solid #ccc;
+            text-align: left;
+            background: url(./img/bg_recruitment.jpeg) no-repeat bottom right;
+            h3{margin-top: 25px;}
+            img{margin-left: 30px; 
+                padding: 10px 0;}
+            span img{margin-bottom: 30px; cursor: pointer;}
+        }
+    }
+    article#ir{
+        .content{
+            border-top: 1px solid #ccc;
+            padding: 40px 0;
+
+            h3 img{padding-bottom: 30px;}
+            .list{
+                font-size: 12px;
+                cursor: pointer;
+                .flex{
+                    width: 300px;
+                    justify-content: space-between;
+                    margin: auto;
+                    line-height: 1.5rem;
+                }
+            }
+            .flex{
+                width: 300px;
+                justify-content: space-between;
+                margin: auto;
+                .txt{cursor: pointer;}
+                span img{
+                    transform: translateX(35px);
+                }
+            }
+        }
+         
+    }
+
+    article#map{
+        .redLine{
+            // z-index는 position 값이 있을 때 지정됨
+            position: relative;
+            top: -4px;
+            z-index: 99;
+        }
+        .container{
+            width: 100%;
+            height: 680px;
+            background-image: url(./img/bg_network.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: translateY(-15px);
+            .headline{margin-top: 100px;}
+            .content{
+                transform: translate(70px,80px);
+                cursor: pointer;
+            }
+        }
+    }
+}
+.btn{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    a{
+        display: inline-block;
+        background: rgba(0, 0, 0, .5);}
+        &.on{background-color: #cb2f33;}
+}

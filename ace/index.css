@@ -1,0 +1,117 @@
+@import url(/reset.css);
+@import url(./font.css);
+section {
+  height: 100vh;
+  position: relative;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: Metropolis-Light;
+  font-weight: normal;
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: Metropolis-Medium;
+  font-weight: 600;
+}
+
+#sect2 ul.menu {
+  position: absolute;
+  top: 50%;
+  left: 10rem;
+  transform: translateY(-50%);
+}
+#sect2 ul.menu li {
+  margin-bottom: 27px;
+  letter-spacing: 0.1rem;
+  color: #999;
+  cursor: pointer;
+}
+#sect2 ul.menu li.on {
+  font-size: 22px;
+  color: #0890c0;
+  font-weight: bold;
+}
+#sect2 .slideWrap {
+  width: 459px;
+  height: 800px;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+#sect2 .slideWrap .slide {
+  width: 100%;
+  height: 800px;
+  display: none;
+}
+#sect2 .slideWrap .slide video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 20%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#sect2 .slideWrap .slide.on {
+  display: block;
+}
+
+.desc {
+  position: absolute;
+  width: 358px;
+  height: 150px;
+  top: 50%;
+  right: 8rem;
+  transform: translateY(-50%);
+}
+.desc div {
+  position: absolute;
+  width: 100%;
+  display: none;
+  p-family: Metropolis-Medium;
+}
+.desc div.on {
+  display: block;
+}
+.desc div h3 {
+  font-size: 30px;
+  font-family: Metropolis-Medium;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.desc div p {
+  line-height: 1.5rem;
+}
+
+a.prev {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  z-index: 999;
+}
+a.prev img {
+  width: 30px;
+}
+
+a.next {
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  z-index: 999;
+}
+a.next img {
+  width: 30px;
+}
+
+a.prev.stop, a.next.stop {
+  opacity: 0.2;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,131 @@
+@import url(/reset.css);
+
+.flex{display: flex;}
+header{
+    position: fixed;
+    z-index: 99;
+    .inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+}
+#sect1{
+    ul.thum{
+    width: 100%;
+    height: 155px;
+    position: absolute;
+    left: 0;
+    bottom: -140px;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    border-top: 1px solid rgba(225, 225, 225, .5);
+    background: rgba(0, 0, 0, .5);
+    transition: .35s;
+    cursor: pointer;
+    &:hover{bottom: 0;}
+    li{
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 5px;
+            left: 0;
+            top: -20px;
+            background: #e2782a;
+            opacity: 0;
+        }
+        &.on::after{
+            opacity: 1;
+        }
+    }
+    img{width: 86px;}
+}
+}
+#sect2{
+        .inner{
+            width: 1500px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            .accodion{
+            width: 480px;
+            border: 1px solid #e2782a;
+            padding: 53px 55px;
+                .title{
+                    border-bottom: 1px solid #333;
+                    h2{
+                        font-size: 26px;
+                        margin-bottom: 1rem;
+                        text-align: left;
+                    }
+                }
+                .accodionContents{
+                    .rank{
+                        margin-bottom: 8px;
+                    .item{
+                        background: #000;
+                        color: #fff;
+                        cursor: pointer;
+                        padding: 4px;
+                        &.on{background: #e2782a;}
+                        }
+                    .itemList{
+                        display: none;
+                        li{
+                            border-bottom: 1px solid #ddd;
+                            padding: 4px 0;
+                            display: flex;
+                            cursor: pointer;
+                            b{
+                                padding: 0 4px;
+                            }
+                            figure{
+                                display: none;
+                                img{
+                                    width: 80px;
+                                    height: 112px;
+                                }
+                            }
+                            .desc{
+                                font-size: 13px;
+                                width: 225px;
+                                color: #aaa;
+                            }
+                        }
+                    }
+                    }
+                }
+            
+            .tabContainer{
+                width: 960px;
+                height: 500px;
+                .tabMenu{
+                    display: flex;
+                    gap: 1rem;
+                    justify-content: center;
+                }
+                .tabContents{
+                    .tab{
+                        ul{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            li{
+                                img{
+                                    width: 220px;
+                                    height: 308px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

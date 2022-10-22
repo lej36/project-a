@@ -1,0 +1,631 @@
+@import url(/reset.css);
+@font-face {
+  font-family: aritaburiM;
+  src: url(./font/AritaBuriM.woff2);
+}
+@font-face {
+  font-family: aritaburiB;
+  src: url(./font/AritaBuriB.woff2);
+}
+@font-face {
+  font-family: aritaburiSB;
+  src: url(./font/AritaBuriSB.woff);
+}
+h1, h2, h2, h3 {
+  font-family: aritaburiM;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+p {
+  color: #333;
+}
+
+header .top {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 12px;
+  align-items: center;
+}
+header .top ul.lang li:hover a {
+  text-decoration: underline;
+}
+header .top ul.log li:hover a {
+  text-decoration: underline;
+}
+header .top img {
+  width: 190px;
+}
+header nav {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header nav ul.menu {
+  max-width: 1000px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+}
+header nav ul.menu li.main a {
+  padding: 1.25rem 1.6rem;
+}
+
+#sect1 .sect1txt {
+  text-align: center;
+  color: #fff;
+}
+#sect1 .date p {
+  font-size: 15px;
+}
+#sect1 .date span {
+  font-size: 23px;
+}
+#sect1 .date .inputDate {
+  display: inline-block;
+  text-align: center;
+}
+#sect1 .date .date3 {
+  cursor: pointer;
+}
+#sect1 .date .date3 {
+  background-image: url(./img/srch_bg.gif);
+}
+#sect1 .date .date3 span {
+  color: #fff;
+  line-height: 3.5rem;
+}
+#sect1 .swiper {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -5%;
+  z-index: -1;
+}
+#sect1 .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+#sect1 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+ul.timelist {
+  display: flex;
+}
+ul.timelist li {
+  text-align: right;
+  font-size: 14px;
+}
+
+section#sect2 {
+  height: 100vh;
+  background: url(./img/time_bg.jpg);
+  display: flex;
+  justify-content: center;
+}
+
+article {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+}
+article .col1 b {
+  font-weight: normal;
+  line-height: 2rem;
+}
+article .col1 h2 {
+  font-size: 30px;
+  color: #b8924b;
+}
+article .col1 ul.timeList {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+article .col1 ul.timeList li:hover {
+  text-decoration: underline;
+  color: tomato;
+}
+article .col1 ul.timeList li {
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+article .col1 ul.timeList li::before {
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  content: "";
+  background-color: tomato;
+  width: 0px;
+  height: 1px;
+  transition: 0.35s;
+}
+article .col1 ul.timeList li.on {
+  color: tomato;
+}
+article .col1 ul.timeList li.on::before {
+  width: 40px;
+}
+article .col2 {
+  position: relative;
+}
+article .col2 ul.timeImg li {
+  position: absolute;
+  padding: 30px;
+  display: none;
+}
+article .col2 ul.timeImg li.on {
+  display: block;
+}
+article .col2 ul.timeImg li img {
+  width: 100%;
+}
+article .col3 {
+  position: relative;
+  height: 100%;
+}
+article .col3 ul.desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+article .col3 ul.desc li {
+  position: absolute;
+  display: none;
+}
+article .col3 ul.desc li.on {
+  display: block;
+}
+article .col3 ul.desc li b {
+  background: #c6a870;
+  color: #fff;
+  padding: 8px 25px;
+  font-weight: normal;
+}
+article .col3 ul.desc li h3 {
+  padding-top: 10px;
+  line-height: 3rem;
+  color: #858585;
+}
+article .col3 ul.desc li p.tit {
+  font-size: 20px;
+  font-weight: 600;
+}
+article .col3 ul.desc li p.summary {
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+article .col3 ul.desc li a.more {
+  border: 1px solid #555;
+  padding: 5px 20px;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+article .col3 ul.desc li a.more:hover {
+  background-color: #c6a870;
+  color: #fff;
+  border: 1px solid #c6a870;
+}
+
+footer {
+  height: 180px;
+  background-color: #555;
+  white-space: nowrap;
+}
+footer ul.fotMenu {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+}
+footer ul.fotMenu li {
+  color: #ccc;
+}
+footer ul.fotMenu li.gold {
+  color: #b8924b;
+}
+footer ul.fotMenu li:hover a {
+  text-decoration: underline;
+}
+footer .sns img {
+  width: 30px;
+}
+footer .under {
+  max-width: 1200px;
+  margin: auto;
+  border-bottom: 1px solid #999;
+}
+footer .fotDesc address {
+  font-style: normal;
+  font-size: 13px;
+}
+footer .fotDesc address p {
+  color: #ccc;
+}
+footer .fotDesc address p.copy {
+  line-height: 3rem;
+  color: #777;
+}
+
+@media screen and (max-width: 740px) {
+  header .lang, header .log {
+    display: none;
+  }
+  header img {
+    position: relative;
+    left: 155px;
+    z-index: 99;
+  }
+  header nav {
+    position: relative;
+    top: -60px;
+  }
+  header nav li.off {
+    display: none;
+  }
+  header nav li.active {
+    background: #b8924b;
+    padding: 0 2rem;
+  }
+  header .bgSlide {
+    height: 400px;
+  }
+  section#sect1 {
+    height: 70%;
+  }
+  section#sect1 .sect1txt h2 {
+    line-height: 3rem;
+  }
+  section#sect1 .date1 {
+    position: absolute;
+    left: 5%;
+    top: 32%;
+    width: 80px;
+    text-align: center;
+  }
+  section#sect1 .date1 p {
+    color: #fff;
+  }
+  section#sect1 .date2, section#sect1 .date3 {
+    text-align: center;
+    transform: translateY(-20px);
+  }
+  section#sect1 .date2 {
+    background: #fff;
+    height: 70px;
+    margin-top: 220px;
+    line-height: 4rem;
+  }
+  section#sect1 .date2 .inputDate {
+    padding: 0 10px;
+  }
+  section#sect1 .date3 {
+    padding: 1rem;
+  }
+  section#sect2 {
+    height: 900px;
+    position: relative;
+    bottom: 5em;
+  }
+  section#sect2 article {
+    padding: 1rem;
+    margin: auto;
+  }
+  section#sect2 article .col1 li::before {
+    left: 0px;
+    top: 16px;
+  }
+  section#sect2 article .col1 li.on::before {
+    width: 35px;
+  }
+  section#sect2 article .col2 {
+    height: 82vw;
+  }
+  section#sect2 article .col3 {
+    height: 200px;
+  }
+  footer {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 741px) {
+  header .lang, header .log {
+    display: none;
+  }
+  header img {
+    position: relative;
+    left: 155px;
+    z-index: 99;
+  }
+  header nav {
+    position: relative;
+    top: -60px;
+  }
+  header nav li.off {
+    display: none;
+  }
+  header nav li.active {
+    background: #b8924b;
+    padding: 0 2rem;
+  }
+  header .bgSlide {
+    height: 600px;
+  }
+  #sect1 {
+    height: 50%;
+  }
+  #sect1 .swiper {
+    height: 800px;
+  }
+  #sect1 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  #sect1 .sect1txt {
+    position: relative;
+    top: 15%;
+    text-align: center;
+    color: #fff;
+  }
+  #sect1 .sect1txt h2 {
+    line-height: 5rem;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  #sect1 .sect1txt h3 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  #sect1 .date {
+    width: 90%;
+    height: 105px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.9);
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    top: 30%;
+  }
+  #sect1 .date .date1 {
+    display: flex;
+    width: 17%;
+    align-items: center;
+    text-align: center;
+    padding-left: 2%;
+  }
+  #sect1 .date .date2 .inputDate {
+    padding: 0 10px;
+    text-align: center;
+  }
+  #sect1 .date .date2 .inputDate::after {
+    content: "";
+    top: 50%;
+    right: 48%;
+  }
+  #sect1 .date .date3 {
+    width: 20%;
+    height: inherit;
+    text-align: center;
+  }
+  #sect1 .date .date3 span {
+    line-height: 6rem;
+  }
+  #sect2 article {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #sect2 article .col1 {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 35px;
+  }
+  #sect2 article .col1 .timeList {
+    padding-top: 25px;
+  }
+  #sect2 article .col2 {
+    width: 66%;
+    height: 540px;
+  }
+  #sect2 article .col3 {
+    width: 34%;
+    height: 540px;
+  }
+  footer {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  header .top {
+    max-width: 1200px;
+    margin: auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 12px;
+    align-items: center;
+  }
+  header .top img {
+    width: 190px;
+    margin-left: 190px;
+    left: 0;
+    z-index: 0;
+  }
+  header .top .lang, header .top .log {
+    display: flex;
+    gap: 15px;
+  }
+  header nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 0px;
+  }
+  header nav ul.menu {
+    max-width: 1000px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    margin: auto;
+  }
+  header nav ul.menu li.main:hover > a {
+    background-color: #b8924b;
+  }
+  header nav ul.menu li.main:hover .inner {
+    opacity: 1;
+    transition: 0.35s;
+  }
+  header nav ul.menu li {
+    white-space: nowrap;
+  }
+  header nav ul.menu .inner {
+    display: flex;
+    z-index: 1;
+    opacity: 0;
+    width: 1000px;
+    position: absolute;
+    top: 60px;
+    background-color: rgba(8, 5, 0, 0.8);
+  }
+  header nav ul.menu .inner h3 {
+    padding: 1.5rem;
+    color: #b8924b;
+  }
+  header nav ul.menu .inner .submenu {
+    height: 250px;
+    margin-top: 0.8rem;
+  }
+  header nav ul.menu .inner .submenu li {
+    display: flex;
+    font-size: 14px;
+    color: #ccc;
+  }
+  header nav ul.menu .inner .submenu li:hover > a {
+    color: #eee;
+    font-weight: 600;
+  }
+  header nav ul.menu .inner .submenu li ul li:hover a {
+    text-decoration: underline;
+  }
+  header nav ul.menu .inner .submenu li a {
+    padding: 10px;
+  }
+  header nav ul.menu .inner .submenu li ul {
+    display: flex;
+  }
+  header nav ul.menu .inner .submenu li ul li {
+    font-size: 12px;
+  }
+  header nav ul.menu .inner .submenu li ul li a {
+    padding: 10px 10px;
+  }
+  header nav ul.menu .inner .innerImg {
+    display: flex;
+  }
+  header nav ul.menu .inner .innerImg img {
+    width: 250px;
+    height: 180px;
+    margin-top: 2.5rem;
+    transform: translateX(-110px);
+  }
+  header nav ul.menu .inner .innerImg .innertxt {
+    width: 180px;
+    white-space: normal;
+    transform: translateX(60px) translateY(65px);
+  }
+  header nav ul.menu .inner .innerImg .innertxt p {
+    color: #ccc;
+    font-size: 13px;
+  }
+  header nav ul.menu .inner .innerImg .innertxt h3 {
+    padding: 1rem 0;
+    font-size: 23px;
+    color: #eee;
+  }
+  header nav ul.menu li.off {
+    display: flex;
+  }
+  header nav ul.menu li.active {
+    background: none;
+    padding: 0;
+  }
+  header .mySwiper {
+    height: 100%;
+  }
+  #sect1 {
+    height: 700px;
+  }
+  #sect1 .date {
+    width: 1118px;
+    top: 50%;
+  }
+  #sect1 .date .date1 p {
+    padding-left: 20px;
+  }
+  #sect1 .date .date2 .inputDate {
+    word-break: keep-all;
+  }
+  #sect2 article .col1 {
+    width: 218px;
+    padding: 2rem;
+    text-align: right;
+  }
+  #sect2 article .col1 ul.timeList {
+    display: block;
+  }
+  #sect2 article .col1 ul.timeList li {
+    margin: 1rem 0;
+  }
+  #sect2 article .col2 {
+    width: 53%;
+  }
+  #sect2 article .col3 {
+    width: 24%;
+    margin: auto;
+  }
+  #sect2 article .col3 p.tit {
+    width: 210px;
+    line-height: 2rem;
+    margin-left: 35px;
+    padding-bottom: 10px;
+  }
+  footer .fotTop {
+    width: 1200px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .fotTop .sns {
+    text-align: right;
+  }
+  footer .fotDesc {
+    text-align: left;
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    gap: 50px;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=index.css.map */

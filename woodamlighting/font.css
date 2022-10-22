@@ -1,0 +1,67 @@
+@font-face{ /* 나눔고딕 */
+    font-family:'NanumGothic';
+    src: url('/font/NanumGothic.eot');
+    src: url('/font/NanumGothic.eot?#iefix') format('embedded-opentype'),url('/font/NanumGothic.woff') format('woff'),url('/font/NanumGothic.ttf') format('truetype');  
+    font-style:normal;font-weight:normal;}
+    
+    @font-face{ /* 나눔고딕Bold */
+    font-family:'NanumGothicB';
+    src: url('/font/NanumGothicBold.eot');
+    src: url('/font/NanumGothicBold.eot?#iefix') format('embedded-opentype'),url('/font/NanumGothicBold.woff') format('woff'),url('/font/NanumGothicBold.ttf') format('truetype');  
+    font-style:normal;font-weight:normal;}
+    
+    @font-face{ /* 나눔바른고딕 */
+    font-family:'NanumBarunGothic';
+    src: url('/font/NanumBarunGothic.eot');
+    src: url('/font/NanumBarunGothic.eot?#iefix') format('embedded-opentype'), url('/font/NanumBarunGothic.woff') format('woff'),url('/font/NanumBarunGothic.ttf') format('truetype');  
+    font-style:normal;font-weight:normal;}
+    
+    @font-face{ /* 나눔바른고딕Bold */
+    font-family:'NanumBarunGothicB';src: url('/font/NanumBarunGothicBold.eot');
+    src: url('/font/NanumBarunGothicBold.eot?#iefix') format('embedded-opentype'),url('/font/NanumBarunGothicBold.woff') format('woff'),url('/font/NanumBarunGothicBold.ttf') format('truetype');  
+    font-style:normal;font-weight:normal;}
+    
+    @font-face{ /* notoSans Light */
+    font-family:'notoL';src: url('/font/notokr-light.eot');
+    src: url('/font/notokr-light.eot?#iefix') format('embedded-opentype'),url('/font/notokr-light.woff') format('woff'),url('/font/notokr-light.ttf') format('truetype');  
+    font-style:normal;font-weight:normal;}
+    
+    @font-face{ /* notoSans Regular */
+    font-family:'notoR';src: url('/font/notokr-regular.eot');
+    src: url('/font/notokr-regular.eot?#iefix') format('embedded-opentype'),url('/font/notokr-regular.woff') format('woff'),url('/font/notokr-regular.ttf') format('truetype');  
+    font-style:normal;font-weight:normal;}
+    
+    @font-face{ /* notoSans Bold */
+    font-family:'notoB';src: url('/font/notokr-bold.eot');
+    src: url('/font/notokr-bold.eot?#iefix') format('embedded-opentype'),url('/font/notokr-bold.woff') format('woff'),url('/font/notokr-bold.ttf') format('truetype');  
+    font-style:normal;font-weight:normal;}
+    
+    @font-face{ /* notoSans Black */
+    font-family:'notoBlack';src: url('/font/notokr-black.eot');
+    src: url('/font/notokr-black.eot?#iefix') format('embedded-opentype'),url('/font/notokr-black.woff') format('woff'),url('/font/notokr-black.ttf') format('truetype');  
+    font-style:normal;font-weight:normal;}
+    
+    @font-face{ /* notoSans medium */
+    font-family:'notoM';src: url('/font/notokr-medium.eot');
+    src: url('/font/notokr-medium.eot?#iefix') format('embedded-opentype'),url('/font/notokr-medium.woff') format('woff'),url('/font/notokr-medium.ttf') format('truetype');  
+    font-style:normal;font-weight:normal;}
+    
+    @font-face{ /* 스포카 Thin*/
+    font-family:'SpoqaThin';src: url('/font/Spoqa Han Sans Thin.eot');
+    src: url('/font/Spoqa Han Sans Thin.eot?#iefix') format('embedded-opentype'),url('/font/Spoqa Han Sans Thin.woff') format('woff'),url('/font/Spoqa Han Sans Thin.ttf') format('truetype');  
+    font-style:normal;font-weight:normal;}
+    
+    @font-face{ /* 스포카 Light*/
+    font-family:'SpoqaLight';src: url('/font/Spoqa Han Sans Light.eot');
+    src: url('/font/Spoqa Han Sans Light.eot?#iefix') format('embedded-opentype'),url('/font/Spoqa Han Sans Light.woff') format('woff'),url('/font/Spoqa Han Sans Light.ttf') format('truetype');  
+    font-style:normal;font-weight:normal;}
+    
+    @font-face{ /* 스포카 Regular*/
+    font-family:'SpoqaRegular';src: url('/font/Spoqa Han Sans Regular.eot');
+    src: url('/font/Spoqa Han Sans Regular.eot?#iefix') format('embedded-opentype'),url('/font/Spoqa Han Sans Regular.woff') format('woff'),url('/font/Spoqa Han Sans Regular.ttf') format('truetype');  
+    font-style:normal;font-weight:normal;}
+    
+    @font-face{ /* 스포카 Bold*/
+    font-family:'SpoqaBold';src: url('/font/Spoqa Han Sans Bold.eot');
+    src: url('/font/Spoqa Han Sans Bold.eot?#iefix') format('embedded-opentype'),url('/font/Spoqa Han Sans Bold.woff') format('woff'),url('/font/Spoqa Han Sans Bold.ttf') format('truetype');  
+    font-style:normal;font-weight:normal;}

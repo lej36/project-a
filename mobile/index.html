@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <div class="product">
+        <figure><img src="/hp/img/adsct (1).gif" alt=""></figure>
+        <button class="category">핸드백</button>
+        <div class="desc">
+            <div class="productName"></div>
+            <div class="detail"></div>
+            <ul class="item">
+                <li class="on"><a href=""></a></li>
+                <li><a href="">praica</a></li>
+                <li><a href="">nike</a></li>
+                <li><a href="">gloden</a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+            <div class="cart">장바구니 담기</div>
+        </div>
+    </div>
+    <div class="product"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // 메뉴아이콘
+        const iconBar=document.querySelector('.menu')
+        this.nextElementSibling.classList.toggle('on');
+        // 상품이름
+        let pdName=this.nextElementSibling.querySelector('.productName')
+        // 상품설명
+        let detail=qdName.nextElementSibling
+        // 상품리스트
+
+        categoryButton.forEach(btn)=>{
+            btn.addEventListener('click',function(){
+                this.nextElementSibling.classList.toggle('on');
+                let pdName=this.nextElementSibling.querySelector('productName')
+                let pdNameLi=pdName.querySelectorAll('ul li')
+                console.log(pdNameLi);
+                // 상품설명
+                let detail=pdName.nextElementSibling;
+                let detailLi=detail.querySelectorAll('ul li')
+                console.log
+            })
+        }
+        let items=detail.nextElementSibling.querySelectorAll('li');
+
+        items.forEach((item,i)=>{
+            alert()
+            item.addEventListener('click',function(e){
+                e.preventDefault();
+                let aElem=item.querySelector('a');
+                let img=aElem.getAttribute('href');
+                // -----------------------------------
+                while(!aElem.classList.contains('product')){
+                    parent=aElem.parentNode;
+
+                    console.log(parent);
+                    if(aElem.classList.contains('product')){
+                        console.log(aElem.children);
+                        aElem.children[0]
+                            .querySelector('img')
+                            .setAttribute('scr',img);
+                    }
+                }
+                // -----------------------------------
+                for(let j=0;j<items.length;j++){
+                    pdNameLi[j].style.display="none"
+                    detailLi[j].style.display="none"
+                }
+                    pdNameLi[i].style.display="block"
+                    detailLi[i].style.display="block"
+
+            });
+        });
+    </script>
+</body>
+</html>

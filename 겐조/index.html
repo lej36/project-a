@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KENZO</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <figure>
+        <video src="https://vod.fl.freecaster.net/vod/kenzo/HlVItb0fsu_720p.mp4" autoplay muted loop></video>
+    </figure>
+    <header>
+        <h1><img src="https://1000logos.net/wp-content/uploads/2020/03/Kenzo-logo.png" alt="logo"></h1>
+
+        <ul class="nav">
+            <li class="main on"><a href=""><span>NEW</span></a>
+                <ul class="sub">
+                    <li><a href="" class="on"><span>LIMITED EDITION</span></a></li>
+                    <li><a href=""><span>NEW IN FOR MEN</span></a></li>
+                    <li><a href=""><span>NEW IN FOR WEMEN</span></a></li>
+                    <li><a href=""><span>NEW SEASON</span></a></li>
+                </ul>
+            </li>
+            <li class="main on"><a href=""><span>MEN</span></a>
+                <ul class="sub">
+                    <li><a href=""><span>TOP</span></a></li>
+                    <li><a href=""><span>PANTS</span></a></li>
+                    <li><a href=""><span>OUTER</span></a></li>
+                    <li><a href=""><span>SHOES</span></a></li>
+                </ul>
+            </li>
+            <li class="main on"><a href=""><span>WOMEN</span></a>
+                <ul class="sub">
+                    <li><a href=""><span>TOP</span></a></li>
+                    <li><a href=""><span>PANTS</span></a></li>
+                    <li><a href=""><span>OUTER</span></a></li>
+                    <li><a href=""><span>SHOES</span></a></li>
+                </ul>
+            </li>
+            <li class="main on"><a href=""><span>KIDS</span></a>
+                <ul class="sub">
+                    <li><a href=""><span>TOP</span></a></li>
+                    <li><a href=""><span>PANTS</span></a></li>
+                    <li><a href=""><span>OUTER</span></a></li>
+                    <li><a href=""><span>SHOES</span></a></li>
+                </ul>
+            </li>
+            <li class="main on"><a href=""><span>ACCESSORIES</span></a>
+                <ul class="sub">
+                    <li><a href=""><span>BAGS</span></a></li>
+                    <li><a href=""><span>HATS</span></a></li>
+                    <li><a href=""><span>SOCKS</span></a></li>
+                    <li><a href=""><span>CASES</span></a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <aside>
+        <div class="ball">
+            <span><img src="https://www.vectorkhazana.com/assets/images/products/Kenzo_Lion_Head.png" alt=""></span>
+            
+        </div>
+    </aside>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('li main').mouseenter(function(){
+            $('li main').removeClass('on')
+            $(this).addClass('on')
+
+            $('.sub li').removeClass('on')
+            $(this).find('.sub li').addClass('on')
+        })
+        $('.sub li').mouseenter(function(){
+            $('.sub li').removeClass('on')
+            $(this).find('.a').addClass('on')
+        })
+    </script>
+</body>
+</html>
