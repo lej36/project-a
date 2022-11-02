@@ -1,0 +1,451 @@
+@import url(/reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+@font-face {
+  font-family: "ROKAFSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSansBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  position: fixed;
+  background: #fff;
+  z-index: 100;
+}
+header .topMenu {
+  width: 95%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .topMenu nav ul {
+  display: flex;
+  gap: 50px;
+  font-size: 18px;
+  font-weight: 500;
+}
+header .topMenu nav ul li:hover {
+  font-weight: bold;
+}
+header .topMenu .sch {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+header .topMenu ul.search {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #999;
+}
+header .topMenu ul.search li:hover {
+  color: #666;
+}
+header .topMenu ul.search li img {
+  transform: translateY(3px);
+}
+header .topMenu button {
+  display: flex;
+  gap: 10px;
+  padding: 0.8em 1.5em;
+  border-radius: 50px;
+  border: 1px solid #bbb;
+  background: #fff;
+  cursor: pointer;
+}
+header .topMenu button:hover {
+  background: #5ad98d;
+  border: 1px solid #5ad98d;
+  color: #fff;
+  transition: 0.35s;
+}
+header .news {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: #888;
+  gap: 30px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  border-top: 1px solid #ddd;
+}
+header .news a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  color: #555;
+}
+
+section#sect1 {
+  width: 100%;
+  height: 100vh;
+}
+section#sect1 .swiper {
+  width: 100%;
+  height: 100%;
+}
+section#sect1 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#sect1 .swiper-slide h2 {
+  font-size: 55px;
+  color: #fff;
+  margin-top: 120px;
+  font-weight: bold;
+}
+section#sect1 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section#sect1 .swiper-button-next, section#sect1 .swiper-button-prev {
+  color: #fff;
+  margin-top: 50px;
+}
+section#sect1 .swiper-pagination-bullet-active {
+  background: #bbb;
+}
+section#sect1 .slide1 {
+  background: url(./img/202010280624033660.jpg);
+}
+section#sect1 .slide2 {
+  background: url(./img/202010280628151570.jpg);
+}
+section#sect1 .slide3 {
+  background: url(./img/202010280638337510.jpg);
+}
+section#sect2 {
+  height: 250vh;
+}
+section#sect2 .fixedHeader {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  color: #777;
+  text-align: center;
+}
+section#sect2 .fixedHeader h2 {
+  font-size: 240px;
+  height: 310px;
+  font-family: "ROKAFSansBold";
+  margin-top: 100px;
+}
+section#sect2 .fixedHeader p {
+  font-size: 23px;
+  font-weight: 300;
+}
+section#sect2 .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 150px;
+}
+section#sect2 .container .box {
+  width: 500px;
+  height: 500px;
+  z-index: 99;
+  color: #fff;
+}
+section#sect2 .container .box p {
+  font-size: 20px;
+  margin-top: 70px;
+  margin-left: 70px;
+}
+section#sect2 .container .box h3 {
+  line-height: 5em;
+  font-size: 25px;
+  margin-left: 70px;
+}
+section#sect2 .container .box span {
+  font-family: "ROKAFSansBold";
+  font-size: 80px;
+}
+section#sect2 .container .box1 {
+  background: url(./img/mainCon_one_list_bg1.jpg) no-repeat;
+}
+section#sect2 .container .box2 {
+  background: url(./img/mainCon_one_list_bg2.jpg) no-repeat;
+}
+section#sect2 .container .box3 {
+  background: url(./img/mainCon_one_list_bg4.jpg) no-repeat;
+}
+section#sect2 .container .box4 {
+  background: url(./img/mainCon_one_list_bg2.jpg) no-repeat;
+}
+section#sect2 .container .box2, section#sect2 .container .box4 {
+  transform: translateY(100px);
+}
+section#sect3 {
+  width: 100%;
+  height: 1166px;
+  position: relative;
+}
+section#sect3 .fixedHeader {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  color: #fff;
+  text-align: center;
+  transform: translateY(50px);
+}
+section#sect3 .fixedHeader h2 {
+  font-size: 240px;
+  font-family: "ROKAFSansBold";
+}
+section#sect3 .fixedHeader p {
+  font-size: 23px;
+  font-weight: 300;
+  transform: translateY(-20px);
+}
+section#sect3 .videoBg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+section#sect3 .videoBg video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: top;
+  height: 1166px;
+}
+section#sect3 .videoBg .bg {
+  background: rgba(20, 159, 92, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 1166px;
+  left: 0;
+  top: 0;
+}
+section#sect3 .tabContanier {
+  width: 1024px;
+  height: 476px;
+  margin: auto;
+  position: relative;
+  top: 150px;
+  background: #fff;
+}
+section#sect3 .tabContanier article {
+  width: 100%;
+  height: 100%;
+  padding: 40px 60px;
+  position: absolute;
+  opacity: 0;
+}
+section#sect3 .tabContanier article.on {
+  opacity: 1;
+}
+section#sect3 .tabContanier article.on .productName {
+  top: 0;
+  opacity: 1;
+}
+section#sect3 .tabContanier article.on .productSumary {
+  opacity: 1;
+}
+section#sect3 .tabContanier article.on .btn {
+  opacity: 1;
+}
+section#sect3 .tabContanier article.on figure img {
+  opacity: 1;
+  top: -60px;
+}
+section#sect3 .tabContanier article .productName {
+  position: relative;
+  top: 50px;
+  opacity: 0;
+  transition-duration: 0.035s;
+  transition-timing-function: ease-in-out;
+  color: #333;
+  letter-spacing: -5px;
+}
+section#sect3 .tabContanier article .productName em {
+  display: block;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 100;
+}
+section#sect3 .tabContanier article .productName h3 {
+  font-size: 80px;
+  font-weight: 200;
+  transform: translateX(-5px);
+}
+section#sect3 .tabContanier article .productSumary {
+  position: relative;
+  transition-duration: 0.35s;
+  transition-delay: 0.2s;
+  transition-timing-function: ease-in-out;
+  opacity: 0;
+}
+section#sect3 .tabContanier article .productSumary p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 25px;
+  color: #666;
+}
+section#sect3 .tabContanier article .btn {
+  transition-delay: 0.4s;
+  transition-timing-function: ease-in-out;
+  flex-direction: 0.35s;
+  opacity: 0;
+  margin-top: 40px;
+}
+section#sect3 .tabContanier article .btn a {
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  color: #fff;
+  line-height: 60px;
+  margin-right: 10px;
+  background: #149f4c;
+  border: 1px solid #149f4c;
+  border-radius: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+section#sect3 .tabContanier article .btn a:hover {
+  background: #fff;
+  color: #149f4c;
+  border: 1px solid #149f4c;
+  transition: 0.35s;
+}
+section#sect3 .tabContanier article figure {
+  position: absolute;
+  width: 520px;
+  height: 536px;
+  right: -147px;
+  top: -60px;
+}
+section#sect3 .tabContanier article figure img {
+  position: absolute;
+  transition-duration: 0.35s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.5s;
+  opacity: 0;
+  top: 0;
+}
+section#sect3 .tabContanier article figure img.subImg {
+  transition-delay: 0.7s;
+}
+section#sect3 .tab_line {
+  position: relative;
+  top: 200px;
+  height: 1px;
+  background: #fff;
+  width: 100%;
+}
+section#sect3 .tab_line ul.tabMenu {
+  width: 1024px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+section#sect3 .tab_line ul.tabMenu li {
+  text-align: center;
+}
+section#sect3 .tab_line ul.tabMenu li a {
+  display: inline-block;
+  padding: 36px 0 20px;
+  font-size: 20px;
+  color: rgba(225, 225, 225, 0.7);
+}
+section#sect3 .tab_line ul.tabMenu li a.on {
+  color: rgb(225, 225, 225);
+}
+section#sect3 .tab_line ul.tabMenu li a:hover {
+  color: rgb(225, 225, 225);
+}
+section#sect3 .tab_line a.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  top: -5px;
+  left: 0;
+  border-radius: 50%;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  border-top: 1px solid #999;
+}
+footer .fotTop {
+  display: flex;
+  justify-content: right;
+  gap: 400px;
+  margin-top: 50px;
+}
+footer .fotTop .fam {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-right: 40px;
+}
+footer .fotTop .fam select {
+  padding: 0.8em 3em;
+  border: 1px solid #bbb;
+  color: #999;
+  border-radius: 50px;
+}
+footer .fotTop .fam a {
+  background: #333;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.5em;
+  border: 1px solid #333;
+}
+footer .fotTop .fam a:hover {
+  background: #fff;
+  color: #333;
+  border: 1px solid #999;
+  transition: 0.35s;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+  line-height: 5em;
+  margin-top: 10px;
+}
+footer ul a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 1px;
+}
+footer address {
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  color: #999;
+  flex-wrap: nowrap;
+  gap: 40px;
+  line-height: 3em;
+}
+footer .copy {
+  color: #bbb;
+  text-align: center;
+  font-size: 13px;
+}/*# sourceMappingURL=index.css.map */

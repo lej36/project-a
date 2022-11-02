@@ -49,7 +49,6 @@ header .search {
 #sect1 {
   height: 100vh;
   position: relative;
-  top: -100px;
   z-index: -99;
 }
 #sect1 article.left {
@@ -79,6 +78,8 @@ header .search {
 }
 
 #sect2 {
+  position: relative;
+  top: 95px;
   height: 80vh;
   width: 100%;
   background-image: url(./img/parallax_bg.jpg);

@@ -161,6 +161,83 @@ section#sect1 .sect1Ball .ball3 {
           animation-iteration-count: infinite;
 }
 
+@-webkit-keyframes ball1Ani {
+  0%, 100% {
+    left: 150px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(40%);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+
+@keyframes ball1Ani {
+  0%, 100% {
+    left: 150px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(40%);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+@-webkit-keyframes ball2Ani {
+  0%, 100% {
+    top: 550px;
+    right: 350px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(40%);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+@keyframes ball2Ani {
+  0%, 100% {
+    top: 550px;
+    right: 350px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(40%);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+@-webkit-keyframes ball3Ani {
+  0%, 100% {
+    top: 390px;
+    right: 150px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(40%);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+@keyframes ball3Ani {
+  0%, 100% {
+    top: 390px;
+    right: 150px;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(40%);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
 .sect1Bg {
   background-image: url(./img/sect1Line.svg);
   background-position: center;

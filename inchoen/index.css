@@ -1,22 +1,55 @@
 @import url(/reset.css);
+.bg {
+  background-image: url(./img/bg-header.png);
+  background-size: cover;
+}
+
 .warp {
   width: 96%;
   margin: auto;
 }
-.warp h2 {
-  width: 60%;
-  margin: auto;
-}
-.warp h2 img {
-  width: 100px;
-  margin: 50px 0;
-}
-.warp h2 img {
+.warp header {
   width: 100%;
 }
-.warp .content {
+.warp header h1 img {
+  margin-top: 40px;
+}
+.warp header h2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+.warp header h2 img {
+  width: 100%;
+  margin: auto;
+  margin: 50px 0;
+}
+.warp .content {
+  perspective: 900px;
+}
+.warp .content .box {
+  background: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.warp .content .box:hover {
+  transform: rotateY(10deg);
+}
+.warp .content .box .thumnail {
+  text-align: center;
+}
+.warp .content .box .thumnail button {
+  color: #fff;
+  border: none;
+  padding: 0.8em 2em;
+  background: #209cff;
+  cursor: pointer;
+}
+.warp .content .box .thumnail button:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.warp .content .box .thumnail button p {
+  font-size: 15px;
+  font-weight: blod;
 }
 .warp .content .col {
   text-align: center;
@@ -31,61 +64,249 @@
   width: 140px;
   height: 140px;
 }
+.warp .content .col2 .btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.warp .content .col2 .btn button.btn1 {
+  background: #ff8518;
+}
+.warp .col3 {
+  perspective: 900px;
+}
+.warp .col3 .thumnail {
+  background: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+.warp .col3 .thumnail:hover {
+  transform: rotateY(10deg);
+}
+.warp .col3 p {
+  font-size: 24px;
+  font-weight: 900;
+  color: #32b9cf;
+}
 
 footer {
-  height: 150px;
-  background: #eee;
+  width: 100%;
+  height: 200px;
+  background: #333;
+}
+footer .inner {
+  width: 78%;
+  margin: auto;
+  color: #bbb;
+}
+footer .inner .fotTop {
+  padding-top: 30px;
+}
+footer .inner .fotTop .tell, footer .inner .fotTop .call {
+  display: flex;
+}
+footer .inner .fotTop .tell img, footer .inner .fotTop .call img {
+  margin-right: 15px;
 }
 
 @media screen and (max-width: 576px) {
-  .content .col {
-    padding: 1rem;
+  .bg {
+    height: 160vh;
   }
-  .content .col3 {
+  .content {
+    display: block;
+  }
+  .content .col1, .content .col2, .content .col3 {
+    width: 100%;
+  }
+  .col1, .col2 {
+    margin: 20px 0;
+    height: 280px;
+  }
+  .col1 img, .col2 img {
+    margin-top: 20px;
+    width: 140px;
+    height: 140px;
+  }
+  .col1 h2, .col2 h2 {
+    line-height: 2em;
+  }
+  .col3 {
     display: flex;
     justify-content: space-between;
   }
-  .content .col3 .row {
+  .col3 .thumnail {
+    display: block;
     width: 48%;
+    height: 180px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .col3 .thumnail img {
+    width: 80px;
+    height: 80px;
+  }
+  footer h2 {
+    font-size: 15px;
+    line-height: 1.8em;
+  }
+  footer .call2 {
+    margin-bottom: 20px;
+  }
+  footer img {
+    width: 15px;
+    height: 15px;
+  }
+  footer p {
+    font-size: 10px;
   }
 }
 @media screen and (min-width: 577px) {
-  .content {
-    display: flex;
-    flex-wrap: wrap;
+  .bg {
+    height: 150vh;
   }
-  .content .col {
-    padding: 2rem;
+  .warp {
+    height: 100%;
   }
-  .content .col1,
-.content .col2 {
+  .content .col1, .content .col2 {
     width: 48%;
+    height: 330px;
+  }
+  .content .col1 img, .content .col2 img {
+    margin-top: 30px;
+  }
+  .content .col1 h2, .content .col2 h2 {
+    font-size: 20px;
+    line-height: 3em;
+  }
+  .content .col1 {
+    float: left;
+  }
+  .content .col2 {
+    float: right;
+    content: "";
   }
   .content .col3 {
     width: 100%;
+    float: left;
+  }
+  .content .col3 .thumnail {
+    height: 140px;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
   }
   .content .col3 .thumnail img {
     width: 100px;
+    margin-left: 50px;
+  }
+  .content .col3 .thumnail .txt {
+    display: flex;
+  }
+  .content .col3 .thumnail .txt h2 {
+    font-size: 20px;
+  }
+  .content .col3 .thumnail .txt p {
+    font-size: 20px;
+  }
+  footer h2 {
+    font-size: 15px;
+    line-height: 1.8em;
+  }
+  footer .call2 {
+    margin-bottom: 20px;
+  }
+  footer img {
+    width: 15px;
+    height: 15px;
+  }
+  footer p {
+    font-size: 10px;
   }
 }
 @media screen and (min-width: 900px) {
-  .wrap {
+  .bg {
+    height: 120vh;
+  }
+  .warp {
     max-width: 1200px;
     margin: auto;
-    height: calc(100vh - 150px);
+    height: 120vh;
   }
-  .wrap h1 img {
+  .warp header h1 img {
     width: 157px;
-    margin: auto;
   }
-  .wrap .content .col1,
-.wrap .content .col3 {
+  .warp header h2 img {
+    width: 60%;
+  }
+  .warp .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .warp .content .box {
+    height: 410px;
+  }
+  .warp .content .col1,
+.warp .content .col2 {
+    width: 34%;
+  }
+  .warp .content .col1 img,
+.warp .content .col2 img {
+    margin-top: 50px;
+  }
+  .warp .content .col1 h2,
+.warp .content .col2 h2 {
+    font-size: 25px;
+    line-height: 4em;
+  }
+  .warp .content .col3 {
     width: 30%;
   }
-  .wrap .content .col2 {
-    width: 37%;
+  .warp .content .col3 .box {
+    margin: 0;
   }
-  .wrap .content .col3 {
-    text-align: left;
+  .warp .content .col3 .thumnail {
+    height: 200px;
+    margin: 0;
+  }
+  .warp .content .col3 .thumnail img {
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+  }
+  .warp .content .col3 .thumnail .txt {
+    display: block;
+  }
+  .warp .content .col3 .thumnail .txt h2 {
+    font-size: 25px;
+  }
+  .warp .content .col3 .thumnail .txt p {
+    font-size: 25px;
+  }
+  .warp .content .col3 .row2 {
+    margin-top: 10px;
+  }
+  footer .fotTop {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .fotTop .tell, footer .fotTop .call {
+    display: flex;
+  }
+  footer .fotTop .tell img, footer .fotTop .call img {
+    width: 35px;
+    height: 35px;
+  }
+  footer .fotTop .call2 {
+    margin-top: 20px;
+  }
+  footer p {
+    line-height: 2em;
+  }
+  footer p.copy {
+    font-size: 13px;
   }
 }/*# sourceMappingURL=index.css.map */
